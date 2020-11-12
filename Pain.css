@@ -1,117 +1,111 @@
-body
-{
-    background-color:#222222;
+body {
+    background-color: #222222;
 }
 
-font
-{
+font {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 0px;
-text-align: left;
-color: #ebebeb;
+    font-size: 0px;
+    text-align: left;
+    color: #ebebeb;
 }
-div
-{
-    background-image:  url('Images/Arcade1080.jpg');
+
+div {
+    background-image: url('Images/Arcade1080.jpg');
     background-position: 0pc -550px;
 }
 
-
-
-a
-{
+a {
     color: #ff7300;
 }
-font
-{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: medium;
-text-align: center;
-color: #ebebeb;
+
+font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: center;
+    color: #ebebeb;
 }
+
+
 /* Introduction */
-font
-{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: medium;
-text-align: center;
-color: #ebebeb;
+
+font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: center;
+    color: #ebebeb;
 }
 
-font
-{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 12;
-text-align: center;
-color: #ebebeb;
+font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12;
+    text-align: center;
+    color: #ebebeb;
 }
+
+
 /* Projects */
-font
-{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: medium;
-text-align: center;
-color: #ebebeb;
+
+font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: center;
+    color: #ebebeb;
 }
 
-font
-{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 12;
-text-align: center;
-color: #ebebeb;
+font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12;
+    text-align: center;
+    color: #ebebeb;
 }
+
 
 /* Contact info */
-font
-{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: medium;
-text-align: center;
-color: #ebebeb;
+
+font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: center;
+    color: #ebebeb;
 }
 
-font
-{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 12;
-text-align: center;
-color: #ebebeb;
+font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12;
+    text-align: center;
+    color: #ebebeb;
 }
+
 
 /* Coding Stuff */
-font
-{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: medium;
-text-align: center;
-color: #ebebeb;
+
+font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: center;
+    color: #ebebeb;
 }
 
-font
-{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 12;
-text-align: center;
-color: #ebebeb;
+font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12;
+    text-align: center;
+    color: #ebebeb;
 }
+
 
 /* Other stuffff */
-font
-{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: medium;
-text-align: center;
-color: #ebebeb;
+
+font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: center;
+    color: #ebebeb;
 }
 
-font
-{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 12;
-text-align: center;
-color: #ebebeb;
+font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12;
+    text-align: center;
+    color: #ebebeb;
 }
-
-
-
