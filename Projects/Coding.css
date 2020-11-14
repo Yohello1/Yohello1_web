@@ -1,0 +1,40 @@
+body
+{
+    background-color: #10001b;
+}
+h2
+{
+    color: #ebebeb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+h3
+{
+    color: #ebebeb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+p
+{
+    color: #ebebeb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+}
+a
+{
+    color:#ff7300;
+}
+h4
+{
+    color: #ebebeb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+}
+
+code
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #ebebeb;
+}
