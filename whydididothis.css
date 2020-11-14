@@ -7,3 +7,25 @@ h1
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #EEEEEE;
 }
+a
+{
+    font-size: small;
+    color: #ff0000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h2
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EEEEEE;
+    text-align: center;
+    font-size: small;
+}
+p
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EEEEEE;
+    text-align: center;
+    font-size: medium;
+}
