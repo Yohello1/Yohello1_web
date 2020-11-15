@@ -19,6 +19,9 @@ p
     color: #ebebeb;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    border: 5px;
+    border-color: #ebebeb;
+    border-style: solid;
 
 }
 a
