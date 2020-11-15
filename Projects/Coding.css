@@ -19,9 +19,6 @@ p
     color: #ebebeb;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    border: 5px;
-    border-color: #ebebeb;
-    border-style: solid;
 
 }
 a
@@ -33,11 +30,6 @@ h4
     color: #ebebeb;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    font-size: 14pt;
 
-}
-
-code
-{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #ebebeb;
 }
