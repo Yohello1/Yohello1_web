@@ -169,8 +169,19 @@ h3 {
     font-family: Firacode;
 }
 
-.imgvfx {
+img {
     float: left;
+    width: 50%;
+    height: auto;
+}
+
+.rectangle3 {
+    float: right;
+    position: relative;
+    top: -10px;
+    height: 5px;
+    width: 100px;
+    background-color: rgb(235, 144, 59);
 }
 
 
