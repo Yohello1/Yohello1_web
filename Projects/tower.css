@@ -12,36 +12,39 @@ a {
     font-family: Firacode;
 }
 
-h1
-{
+h1 {
     font-family: FiraCode;
-    color:#ebebeb;
-}
-div
-{
-    color: aqua;
+    color: #ebebeb;
+    display: inline;
+    font-size: 40pt;
 }
 
-.container2 {
-    position: relative;
-    height: 1080px;
-    width: 33%;
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img1 {
     float: left;
-
+    width: 40%;
+    height: auto;
 }
 
-.container3 {
-    position: relative;
-    height: 380px;
-    width: 50%;
+.img2 {
     float: right;
-    right: 5%;
+    width: 60%;
+    height: auto;
 }
 
-.container4 {
+.title {
     position: relative;
-    top: 40px;
-    height: 380px;
-    width: 50%;
+    vertical-align: -100px;
+    display: inline;
+}
+
+.img3
+{
+    background-color: aqua;
     float: right;
+    width: 50%;
 }
