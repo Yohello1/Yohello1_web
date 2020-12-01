@@ -55,3 +55,21 @@ img {
     float: left;
     width: 40%;
 }
+
+h3 {
+    font-family: FiraCode;
+    font-size: 25pt;
+    color: #ebebeb;
+    position: relative;
+    background-position-x: -50px;
+}
+
+p {
+    font-family: FiraCode;
+    font-size: 15pt;
+    color: #ebebeb;
+}
+
+.whydid {
+    float: right;
+}
