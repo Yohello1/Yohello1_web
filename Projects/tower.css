@@ -19,6 +19,10 @@ h1 {
     font-size: 40pt;
 }
 
+.nextpoint {
+    width: 100%;
+}
+
 img {
     max-width: 100%;
     height: auto;
