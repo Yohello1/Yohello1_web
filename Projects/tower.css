@@ -42,9 +42,12 @@ img {
     display: inline;
 }
 
-.img3
-{
-    background-color: aqua;
+.img3 {
     float: right;
-    width: 50%;
+    width: 60%;
+}
+
+.img4 {
+    float: left;
+    width: 40%;
 }
