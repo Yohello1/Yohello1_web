@@ -8,7 +8,10 @@
 
 <?php
 $name = "Yohello";
-
+$time = "not avaliable during this time";
+$jobs = "no jobs";
+$code = "Images\code.jpg";
+$cgi = "Images\Cannonshooting.jpg";
 ?>
 
 
