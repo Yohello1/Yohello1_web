@@ -12,6 +12,9 @@ $time = "not avaliable during this time";
 $jobs = "no jobs";
 $code = "Images\code.jpg";
 $cgi = "Images\Cannonshooting.jpg";
+
+$verticalimg = "Images\Tower.jpg";
+$verticalcaption = "OH NO IT'S A TOWER";
 ?>
 
 
