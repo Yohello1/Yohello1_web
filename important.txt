@@ -1,0 +1,18 @@
+$time
+	Time that I can be reached
+$jobs
+
+$cgi
+	Images for cgi
+$code
+	Image for code
+	
+$verticalimg
+$verticalcaption
+	Image for front 
+$toprightimg
+$toprightcaption
+	image for the front beside vertical one on top
+$bottomleftimg
+$bottomleftcaption
+	image for the front beside vertical one on bottom
