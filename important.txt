@@ -9,6 +9,7 @@ $code
 	
 $verticalimg
 $verticalcaption
+$vertisub
 	Image for front 
 $toprightimg
 $toprightcaption

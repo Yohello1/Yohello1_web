@@ -15,6 +15,15 @@ $cgi = "Images\Cannonshooting.jpg";
 
 $verticalimg = "Images\Tower.jpg";
 $verticalcaption = "OH NO IT'S A TOWER";
+$verticalsub = "FIRE THE CANNONS";
+
+$toprightcaption = "A Galaxy I think?";
+$toprightimg = "Images/untitled17.jpg";
+$toprightsub = "In a galaxy far far away";
+
+$bottomleftcaption = "CODY";
+$bottomleftimg = "Images/code.jpg";
+$bottomleftsub = "Nice code ya got there";
 ?>
 
 
@@ -144,10 +153,10 @@ echo "<p> I'm Yohello from <i>the mythical land of Canada</i>, I know a bit abou
         </p>
 
     </div>
-<img url
-    <div class="<?php echo $cgi ?>">
-    </div>
 
+    <div class="imgvfx">
+        <img src="<?php echo $cgi ?>">
+    </div>
 
 
 
