@@ -19,10 +19,6 @@ h1 {
     font-size: 40pt;
 }
 
-.nextpoint {
-    width: 100%;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -46,30 +42,78 @@ img {
     display: inline;
 }
 
-.img3 {
+.img3
+{
+    background-color: aqua;
     float: right;
-    width: 60%;
+    width: 50%;
+    display: inline;
 }
-
-.img4 {
+.nextpoint {
     float: left;
-    width: 40%;
+    width: 100%;
+    height: 1px;
 }
 
-h3 {
+h2 {
     font-family: FiraCode;
-    font-size: 25pt;
     color: #ebebeb;
-    position: relative;
-    background-position-x: -50px;
+    display: inline;
+    font-size: 25pt;
+    float: right;
 }
 
 p {
     font-family: FiraCode;
-    font-size: 15pt;
     color: #ebebeb;
-}
-
-.whydid {
+    display: inline;
+    font-size: 15pt;
     float: right;
 }
+
+.why {
+    float: right;
+    position: relative;
+    width: 50%;
+    display: inline;
+}
+.whyimg {
+    float: right;
+    position: relative;
+    width: 50%;
+    vertical-align: -100px;
+    display: inline;
+}
+h2 {
+    font-family: FiraCode;
+    color: #ebebeb;
+    display: inline;
+    font-size: 25pt;
+    float: left;
+}
+
+p {
+    font-family: FiraCode;
+    color: #ebebeb;
+    display: inline;
+    font-size: 15pt;
+    float: left;
+}
+
+.How {
+    float: left;
+    position: relative;
+    width: 50%;
+    display: inline;
+}
+.howimg {
+    float: left;
+    position: relative;
+    width: 50%;
+    vertical-align: -100px;
+    display: inline;
+}
+
+
+
+
