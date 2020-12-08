@@ -17,3 +17,7 @@ $toprightcaption
 $bottomleftimg
 $bottomleftcaption
 	image for the front beside vertical one on bottom
+
+
+
+
