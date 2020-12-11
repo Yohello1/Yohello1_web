@@ -14,7 +14,7 @@ $code = "Images\code.jpg";
 $cgi = "Images\Cannonshooting.jpg";
 
 $verticalimg = "Images\Tower.jpg";
-$verticalcaption = "OH NO IT'S A TOWER";
+$verticalcaption = "HELLO";
 $verticalsub = "FIRE THE CANNONS";
 
 $toprightcaption = "A Galaxy I think?";
