@@ -19,5 +19,6 @@ $bottomleftcaption
 	image for the front beside vertical one on bottom
 
 
-
+Error code : https://www.php.net/manual/en/function.http-response-code.php
+200, and 0 are fine
 

@@ -52,23 +52,8 @@ img {
 .nextpoint {
     float: left;
     width: 100%;
-    height: 1px;
-}
-
-h2 {
-    font-family: FiraCode;
-    color: #ebebeb;
+    height: 0px;
     display: inline;
-    font-size: 25pt;
-    float: right;
-}
-
-p {
-    font-family: FiraCode;
-    color: #ebebeb;
-    display: inline;
-    font-size: 15pt;
-    float: right;
 }
 
 .why {
@@ -86,27 +71,19 @@ p {
     display: inline;
 }
 
+.How {
+    float: left;
+    position: relative;
+    width: 50%;
+    display: inline;
+}
+
 h2 {
     font-family: FiraCode;
     color: #ebebeb;
     display: inline;
     font-size: 25pt;
     float: left;
-}
-
-p {
-    font-family: FiraCode;
-    color: #ebebeb;
-    display: inline;
-    font-size: 15pt;
-    float: left;
-}
-
-.How {
-    float: left;
-    position: relative;
-    width: 50%;
-    display: inline;
 }
 
 .howimg {
@@ -145,5 +122,5 @@ p {
     color: #ebebeb;
     display: inline;
     font-size: 15pt;
-    float: right;
+    float: left;
 }
