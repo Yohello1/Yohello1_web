@@ -43,7 +43,6 @@ img {
 }
 
 .img3 {
-    background-color: aqua;
     float: right;
     width: 50%;
     display: inline;
@@ -97,14 +96,14 @@ h2 {
 .break {
     float: left;
     display: inline;
-    height: 150px;
+    height: 50px;
     width: 100%;
 }
 
 .explain {
     float: left;
     display: inline;
-    height: 100px;
+    height: 170px;
     width: 100%;
 }
 
@@ -123,4 +122,12 @@ p {
     display: inline;
     font-size: 15pt;
     float: left;
+    width: 50%;
+}
+
+.download_and_video
+{
+    display: inline;
+    padding-top: 100px;
+    width: 50%;
 }
