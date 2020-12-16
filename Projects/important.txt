@@ -1,0 +1,16 @@
+../Images/Tower.jpg = img1
+Pictures/Towerhead.jpg = img2
+Pictures/Lookingup.jpg = img2.5
+Pictures/final.png = img3 beside the tower title
+
+Tower Defense = Title
+
+Because I was bored = Text1
+Pictures/Lookingup.jpg = Text1img
+
+By using Blender and love = Text2
+Pictures/Towerhead.jpg = Text2img
+
+Line 88 = Specifics
+Line 92 = download
+Line 94 =  Video
