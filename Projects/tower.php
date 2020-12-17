@@ -19,6 +19,9 @@ $words2 = "By using Blender and love";
 $words2img = "Pictures/Towerhead.jpg";
 $words3 = "I was bored and thought of a castle";
 $words3img = "Pictures/Towerwire.jpg";
+
+#Specifics
+$specifics= file_get_contents('Towerr/Specifics.txt');
 ?>
 
 
@@ -45,7 +48,9 @@ $words3img = "Pictures/Towerwire.jpg";
     <div class="nextpoint"></div>
     <div class="Why">
         <h2>Why did I make this?</h2>
+        <div class="talky">
         <p><?php echo $words1 ?></p>
+        </div>
     </div>
         <div class="whyimg">
 
@@ -58,7 +63,9 @@ $words3img = "Pictures/Towerwire.jpg";
     <div class="nextpoint"></div>
     <div class="How">
         <h2>How did I make this?</h2>
+        <div class="talky">
         <p><?php echo $words2 ?></p>
+    </div>
     </div>
     <div class="whyimg">
         <img src="<?php echo $words2img ?>">
@@ -72,7 +79,9 @@ $words3img = "Pictures/Towerwire.jpg";
     <div class="nextpoint"></div>
     <div class="Why">
         <h2>Why did I make this?</h2>
+        <div class="talky">
         <p><?php echo $words3 ?></p>
+        </div>
     </div>
     <div class="howimg">
         <img src="<?php echo $words3img ?>">

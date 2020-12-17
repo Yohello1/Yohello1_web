@@ -62,6 +62,10 @@ img {
     display: inline;
 }
 
+.talky {
+    width: 100%;
+}
+
 .whyimg {
     float: right;
     position: relative;
@@ -122,11 +126,10 @@ p {
     display: inline;
     font-size: 15pt;
     float: left;
-    width: 50%;
+    width: 100%;
 }
 
-.download_and_video
-{
+.download_and_video {
     display: inline;
     padding-top: 100px;
     width: 50%;
