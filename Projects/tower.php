@@ -104,8 +104,6 @@ $specifics= file_get_contents('Towerr/Specifics.txt');
         <h3> Can I download the file? Where can I watch a video of it?</h3>
         <p> You cannot download it right now, in the future I may put the file out to be downloaded</p>
         <p>I will add in the video at a later time</p>
-
-        
     </div>
 
 </body>

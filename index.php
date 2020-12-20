@@ -7,23 +7,26 @@
 </head>
 
 <?php
-$name = "Yohello";
-$time = "not avaliable during this time";
-$jobs = "no jobs";
-$code = "Images\code.jpg";
-$cgi = "Images\Cannonshooting.jpg";
+    $name = "Yohello";
+    $time = "not avaliable during this time";
+    $jobs = "no jobs";
+    $code = "Images\code.jpg";
+    $cgi = "Images\Cannonshooting.jpg";
 
-$verticalimg = "Images\Tower.jpg";
-$verticalcaption = "HELLO";
-$vertisub = "FIRE THE CANNONS";
+    $verticalimg = "Images\Tower.jpg";
+    $verticalcaption = "HELLO";
+    $vertisub = "FIRE THE CANNONS";
 
-$toprightcaption = "A Galaxy I think?";
-$toprightimg = "Images/untitled17.jpg";
-$toprightsub = "In a galaxy far far away";
+    $toprightcaption = "A Galaxy I think?";
+    $toprightimg = "Images/untitled17.jpg";
+    $toprightsub = "In a galaxy far far away";
 
-$bottomleftcaption = "CODY";
-$bottomleftimg = "Images/code.jpg";
-$bottomleftsub = "Nice code ya got there";
+    $bottomleftcaption = "CODY";
+    $bottomleftimg = "Images/code.jpg";
+    $bottomleftsub = "Nice code ya got there";
+
+    $project1 = "Projects/tower.php";
+    $project2 = "Need to make";
 ?>
 
 
@@ -68,7 +71,7 @@ $bottomleftsub = "Nice code ya got there";
     <br>
     <br>
     <div class="container2">
-        <a href="fullintroduction.html">
+        <a href="<?php echo $project1 ?>">
             <img src="<?php echo $verticalimg; ?>" style="width:100%; height:100%">
             <div class="text-block">
                 <h4><?php echo $verticalcaption; ?></h4>
@@ -89,50 +92,7 @@ $bottomleftsub = "Nice code ya got there";
             <h4><?php echo $bottomleftcaption; ?></h4>
             <p><?php echo $bottomleftsub; ?></p>
         </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
     <h3 class="h31">About Me</h3>
     <div class="rectangle"></div>

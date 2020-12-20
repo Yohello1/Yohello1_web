@@ -1,29 +1,26 @@
-body
-{
+body {
     background-color: #111111;
 }
-h1
-{
+
+h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #EEEEEE;
 }
-a
-{
+
+a {
     font-size: small;
     color: #ff0000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-h2
-{
+h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #EEEEEE;
     text-align: center;
     font-size: small;
 }
-p
-{
+
+p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #EEEEEE;
     text-align: center;
