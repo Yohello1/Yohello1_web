@@ -1,0 +1,28 @@
+@font-face {
+    font-family: FiraCode;
+    src: url(../FiraCode-VariableFont_wght.ttf)
+    
+}
+
+body {
+    background: #333333;
+}
+
+h1 {
+    padding-top: 350px;
+    padding-bottom: 350px;
+    text-align: center ;
+    font-family: FiraCode;
+    color: #333333;
+    font-size: 40pt;;
+    background-size: cover;
+    background-image:url(Towerr/final.png);
+}
+
+.code-block
+{
+    width: 50%;
+    height:300px;
+    background-color:#666666;
+    float: left;
+}

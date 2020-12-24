@@ -1,9 +1,9 @@
 <head>
-    <title>Projects</title>
+    <title> Projects Homepage</title>
+    <link rel="stylesheet" href="indexx.css">
 
-    <link rel="stylesheet" href="Regret.css">
-</head>
-
-<body>
-
+<head>
+    <body>
+    <h1>Projects</h1>
+    <div class="code-block"><p>Hello there</p></div>
 </body>
