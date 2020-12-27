@@ -40,8 +40,7 @@ img {
     object-fit: cover;
 }
 
-.left-col,
-.right-col {
+.left-col, .right-col {
     text-align: center;
     width: 33.33%;
     float: left;
@@ -205,6 +204,5 @@ h3 {
     font-size: 18pt;
     font-family: Firacode;
 }
-
 
 /* @media only screen and (min-width: 1900px) { */

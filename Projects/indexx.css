@@ -3,14 +3,12 @@
     src: url(../FiraCode-VariableFont_wght.ttf)
     
 }
-
 body {
     background: #333333;
 }
-
-h1 {
-    padding-top: 350px;
-    padding-bottom: 350px;
+h1{
+    padding-top: 500px;
+    padding-bottom: 500px;
     text-align: center ;
     font-family: FiraCode;
     color: #333333;
@@ -18,11 +16,36 @@ h1 {
     background-size: cover;
     background-image:url(Towerr/final.png);
 }
-
+.break
+{
+padding-top: 100px;
+}
 .code-block
 {
     width: 50%;
     height:300px;
     background-color:#666666;
     float: left;
+}
+.code-pro
+{
+    text-align:right;
+    font-family:FiraCode;
+    padding-right:20%;
+    color: #d1d1d1;
+    float:right;
+    width:50%
+}
+h2{
+    font-family:FiraCode;
+    color: #d1d1d1;
+}
+.cgi-pro
+{
+    text-align:left;
+    font-family:FiraCode;
+    padding-left:20%;
+    color: #d1d1d1;
+    float:left;
+    width:10%
 }

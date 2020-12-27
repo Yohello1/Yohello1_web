@@ -7,26 +7,26 @@
 </head>
 
 <?php
-    $name = "Yohello";
-    $time = "not avaliable during this time";
-    $jobs = "no jobs";
-    $code = "Images\code.jpg";
-    $cgi = "Images\Cannonshooting.jpg";
+$name = "Yohello";
+$time = "not avaliable during this time";
+$jobs = "no jobs";
+$code = "Images\code.jpg";
+$cgi = "Images\Cannonshooting.jpg";
 
-    $verticalimg = "Images\Tower.jpg";
-    $verticalcaption = "HELLO";
-    $vertisub = "FIRE THE CANNONS";
+$verticalimg = "Images\Tower.jpg";
+$verticalcaption = "HELLO";
+$vertisub = "FIRE THE CANNONS";
 
-    $toprightcaption = "A Galaxy I think?";
-    $toprightimg = "Images/untitled17.jpg";
-    $toprightsub = "In a galaxy far far away";
+$toprightcaption = "A Galaxy I think?";
+$toprightimg = "Images/untitled17.jpg";
+$toprightsub = "In a galaxy far far away";
 
-    $bottomleftcaption = "CODY";
-    $bottomleftimg = "Images/code.jpg";
-    $bottomleftsub = "Nice code ya got there";
+$bottomleftcaption = "CODY";
+$bottomleftimg = "Images/code.jpg";
+$bottomleftsub = "Nice code ya got there";
 
-    $project1 = "Projects/tower.php";
-    $project2 = "Need to make";
+$project1 = "Projects/tower.php";
+$project2 = "Need to make";
 ?>
 
 
@@ -92,24 +92,27 @@
             <h4><?php echo $bottomleftcaption; ?></h4>
             <p><?php echo $bottomleftsub; ?></p>
         </div>
-    </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    </div>
 
+<div class="nextpoint"> </div>
+
+
+
+<div class="introtext">
     <h3 class="h31">About Me</h3>
     <div class="rectangle"></div>
-    <div class="introtext">
+
 <?php
 echo "<p> I'm Yohello from <i>the mythical land of Canada</i>, I know a bit about computers, and stuff. As of now I live I'm in the Eastern Time Zone (-4 GMT, -5 UTC), I'm avaliable  $time, I rarly know what is going on in advanced. I'm not taking job requets no matter who you are, I can redirect you to someone who might be able to. Also I know a bit about how computers work but I'm no expert, I learned <b>All</b> of it online, and self taught. I've learned Cgi and Vfx with Blender, I started programing by learning HTML, then diving straight into C# with Unity, and Python then I took a break for about a year and got back into coding with C, and that is how I got here.";
 ?>
     </div>
     <br>
-    <div class="nextpoint">
+    <div class="nextpoint"></div>
 
-
-    </div>
     <div class="cgivfxtext">
         <h3>Cgi and Vfx</h3>
         <div class="rectangle2"></div>
-        <p>I'm always working on some sort of cgi/vfx, this is my latest project involving fire,hardsurface,rigidbody, and so much more. <br> <a href="Projects/Visualfx.html"> To learn more about this project</a> <br> <a href="Projects/Projecthomepage.html">Projects in general</a>
+        <p>I'm always working on some sort of cgi/vfx, this is my latest project involving fire,hardsurface,rigidbody, and so much more. <br> <a href="Projects/Visualfx.html"> To learn more about this project</a> <br> <a href="Projects/index.php">Projects in general</a>
         </p>
 
     </div>
@@ -134,17 +137,6 @@ echo "<p> I'm Yohello from <i>the mythical land of Canada</i>, I know a bit abou
     <div class="imgvfx">
         <img src="<?php echo $code ?>">
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div class="nextpoint">
 
     </div>
