@@ -1,0 +1,30 @@
+{
+    "code":[
+
+        {
+            "name":"Easy bpy",
+            "lang":"Python",
+            "github":"https://github.com/Yohello1/EasyBPY"
+        },
+        {
+            "name":"This website",
+            "lang":"Php,Css, and Html",
+            "github":"https://github.com/Yohello1/Yohello1.io"
+        },
+        {
+            "name":"Math stuff",
+            "lang":"C",
+            "github":"https://github.com/Yohello1/Math-forumulas-in-c"
+        }
+
+    ],
+
+
+    "cgi":[
+
+
+
+
+    ]
+
+}
