@@ -25,6 +25,37 @@
 
 
 
+    ],
+
+    "for_show":[
+        {
+            "code":"Images/code.jpg"
+        },
+        {
+            "cgi":"Projects/Towerr/final.png"
+        }
+    ],
+
+    "front_page":[
+        {
+            "img":"Images/Tower.jpg",
+            "caption":"HELLO",
+            "sub":"FIRE THE CANNONS",
+            "link":"Projects/tower.php"
+
+        },
+        {
+            "img":"Images/untitled17.jpg",
+            "caption":"A Galaxy I think?",
+            "sub":"In a galaxy far far away",
+            "link":"Projects/tower.php"
+        },
+        {
+            "img":"Images/code.jpg",
+            "caption":"CODE",
+            "sub":"Nice code ya got there",
+            "link":"Projects/tower.php"
+        }
     ]
 
 }

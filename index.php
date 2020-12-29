@@ -7,11 +7,15 @@
 </head>
 
 <?php
+
+$jsondata = file_get_contents("data.json");
+$json = json_decode($jsondata,true);
+
 $name = "Yohello";
 $time = "not avaliable during this time";
 $jobs = "no jobs";
-$code = "Images\code.jpg";
-$cgi = "Images\Cannonshooting.jpg";
+$code = $json['for_show'][0]['code'];
+$cgi = $json['for_show'][0]['cgi'];
 
 $verticalimg = "Images\Tower.jpg";
 $verticalcaption = "HELLO";
@@ -72,25 +76,25 @@ $project2 = "Need to make";
     <br>
     <div class="container2">
         <a href="<?php echo $project1 ?>">
-            <img src="<?php echo $verticalimg; ?>" style="width:100%; height:100%">
+            <img src="<?php echo $json['front_page'][0]['img']; ?>" style="width:100%; height:100%">
             <div class="text-block">
-                <h4><?php echo $verticalcaption; ?></h4>
+                <h4><?php echo $json['front_page'][0]['caption']; ?></h4>
                 <p><?php echo $vertisub; ?></p>
             </div>
         </a>
     </div>
     <div class="container3">
-        <img src="<?php echo $toprightimg; ?>" style="width:100%; height:100%">
+        <img src="<?php echo $json['front_page'][1]['img']; ?>" style="width:100%; height:100%">
         <div class="text-block">
-            <h4><?php echo $toprightcaption; ?></h4>
-            <p><?php echo $toprightsub; ?></p>
+            <h4><?php echo $json['front_page'][1]['caption']; ?></h4>
+            <p><?php echo $json['front_page'][1]['sub']; ?></p>
         </div>
     </div>
     <div class="container4">
-        <img src="<?php echo $bottomleftimg; ?>" style="width:100%; height:100%">
+        <img src="<?php echo $json['front_page'][2]['img']; ?>" style="width:100%; height:100%">
         <div class="text-block">
-            <h4><?php echo $bottomleftcaption; ?></h4>
-            <p><?php echo $bottomleftsub; ?></p>
+            <h4><?php echo $json['front_page'][2]['caption']; ?></h4>
+            <p><?php echo $json['front_page'][2]['sub']; ?></p>
         </div>
     </div>
 
