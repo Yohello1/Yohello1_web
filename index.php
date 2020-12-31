@@ -17,18 +17,6 @@ $jobs = "no jobs";
 $code = $json['for_show'][0]['code'];
 $cgi = $json['for_show'][0]['cgi'];
 
-$verticalimg = "Images\Tower.jpg";
-$verticalcaption = "HELLO";
-$vertisub = "FIRE THE CANNONS";
-
-$toprightcaption = "A Galaxy I think?";
-$toprightimg = "Images/untitled17.jpg";
-$toprightsub = "In a galaxy far far away";
-
-$bottomleftcaption = "CODY";
-$bottomleftimg = "Images/code.jpg";
-$bottomleftsub = "Nice code ya got there";
-
 $project1 = "Projects/tower.php";
 $project2 = "Need to make";
 ?>
