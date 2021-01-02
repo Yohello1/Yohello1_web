@@ -1,60 +1,55 @@
 {
-    "code":[
+    "code": [
 
         {
-            "name":"Easy bpy",
-            "lang":"Python",
-            "github":"https://github.com/Yohello1/EasyBPY"
+            "name": "Easy bpy",
+            "lang": "Python",
+            "github": "https://github.com/Yohello1/EasyBPY"
         },
         {
-            "name":"This website",
-            "lang":"Php,Css, and Html",
-            "github":"https://github.com/Yohello1/Yohello1.io"
+            "name": "This website",
+            "lang": "Php,Css, and Html",
+            "github": "https://github.com/Yohello1/Yohello1.io"
         },
         {
-            "name":"Math stuff",
-            "lang":"C",
-            "github":"https://github.com/Yohello1/Math-forumulas-in-c"
+            "name": "Math stuff",
+            "lang": "C",
+            "github": "https://github.com/Yohello1/Math-forumulas-in-c"
         }
 
     ],
 
 
-    "cgi":[
+    "cgi": [
 
 
 
 
     ],
 
-    "for_show":[
-        {
-            "code":"Images/code.jpg"
-        },
-        {
-            "cgi":"Projects/Towerr/final.png"
-        }
-    ],
+    "for_show": [{
+        "code": "Images/code.jpg",
+        "cgi": "Projects/Towerr/final.png"
+    }],
 
-    "front_page":[
-        {
-            "img":"Images/Tower.jpg",
-            "caption":"HELLO",
-            "sub":"FIRE THE CANNONS",
-            "link":"Projects/tower.php"
+    "front_page": [{
+            "img": "Images/Tower.jpg",
+            "caption": "HELLO",
+            "sub": "FIRE THE CANNONS",
+            "link": "Projects/tower.php"
 
         },
         {
-            "img":"Images/untitled17.jpg",
-            "caption":"A Galaxy I think?",
-            "sub":"In a galaxy far far away",
-            "link":"Projects/tower.php"
+            "img": "Images/untitled17.jpg",
+            "caption": "A Galaxy I think?",
+            "sub": "In a galaxy far far away",
+            "link": "Projects/tower.php"
         },
         {
-            "img":"Images/code.jpg",
-            "caption":"CODE",
-            "sub":"Nice code ya got there",
-            "link":"Projects/tower.php"
+            "img": "Images/code.jpg",
+            "caption": "CODE",
+            "sub": "Nice code ya got there",
+            "link": "Projects/tower.php"
         }
     ]
 

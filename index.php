@@ -4,6 +4,7 @@
 
     <title>Yohello</title>
     <link rel="stylesheet" href="indexx.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
 
 <?php
@@ -15,7 +16,11 @@ $name = "Yohello";
 $time = "not avaliable during this time";
 $jobs = "no jobs";
 $code = $json['for_show'][0]['code'];
+<<<<<<< Updated upstream
 $cgi = $json['for_show'][0]['cgi'];
+=======
+$cgi  = $json['for_show'][0]['code'];
+>>>>>>> Stashed changes
 
 $project1 = "Projects/tower.php";
 $project2 = "Need to make";
@@ -42,7 +47,7 @@ $project2 = "Need to make";
     <div class="row">
 
         <div class="left-col">
-            <h2><a href="#Projects"><u>Projects</u></a></h2>
+            <h2><a href="Projects/"><u>Projects</u></a></h2>
 
         </div>
 
@@ -54,7 +59,7 @@ $project2 = "Need to make";
 
         <div class="right-col">
 
-            <h2><a href="#Contact-info">Contact Me</a></h2>
+            <h2><a href="contact.html">Contact Me</a></h2>
         </div>
 
     </div>
@@ -67,7 +72,7 @@ $project2 = "Need to make";
             <img src="<?php echo $json['front_page'][0]['img']; ?>" style="width:100%; height:100%">
             <div class="text-block">
                 <h4><?php echo $json['front_page'][0]['caption']; ?></h4>
-                <p><?php echo $vertisub; ?></p>
+                <p><?php echo $json['front_page'][0]['sub']; ?></p>
             </div>
         </a>
     </div>
