@@ -16,11 +16,8 @@ $name = "Yohello";
 $time = "not avaliable during this time";
 $jobs = "no jobs";
 $code = $json['for_show'][0]['code'];
-<<<<<<< Updated upstream
 $cgi = $json['for_show'][0]['cgi'];
-=======
-$cgi  = $json['for_show'][0]['code'];
->>>>>>> Stashed changes
+
 
 $project1 = "Projects/tower.php";
 $project2 = "Need to make";
