@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #333333;
+    background-color: #222222;
 }
 
 h1 {
@@ -19,4 +19,28 @@ h1 {
 .bar {
     height: 5px;
     background: #EEE;
+}
+
+.email_stuff {
+    float: left;
+    width: 60%;
+    background-color: #333333;
+}
+
+h2 {
+    color: #EEE;
+    font-family: FiraCode;
+    text-align: center;
+    font-size: 30pt;
+}
+
+a {
+    color: #EEE;
+    font-size: 20pt;
+}
+
+label {
+    color: #EEE;
+    font-size: 20pt;
+    text-align: center;
 }
