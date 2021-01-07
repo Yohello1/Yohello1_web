@@ -46,7 +46,7 @@ $code3git   = $json['code'][2]['github'];
 
     </div>
     <div class="cg-block">
-         <a href="tower.php">
+         <a href="x-mas.php">
             <img src="Pictures/topview.png">
         </a>
     </div>
