@@ -19,6 +19,8 @@ h1 {
 .bar {
     height: 5px;
     background: #EEE;
+    width:100%;
+    float:left;
 }
 
 .email_stuff {
@@ -70,4 +72,25 @@ h4 {
     width: 40%;
     float:right;
     background-color: #222222;
+}
+.break{
+    width:100%;
+    height:100px;
+    float: left;
+}
+.links
+{
+    width:100%;
+    height:100px;
+    float:left;
+}
+.hehe{
+    font-size:10pt;
+    color:#222221;
+}
+.space
+{
+    float:left;
+    width:100%;
+    height:400px;
 }
