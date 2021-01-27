@@ -47,9 +47,12 @@ h2{
 {
     width: 50%;
     height:500px;
-    background-color:#333;
+    background-image:url(Pictures/final.png);
+background-size: auto 100%;
+
     float: left;
 }
+
 .code-block
 {
     width: 50%;
