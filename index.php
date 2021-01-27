@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
 
     <title>Yohello</title>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<--    <link rel="stylesheet" href="indexx.css">   -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
 
 <?php
@@ -24,9 +25,11 @@ $project2 = "Need to make";
 
 
 
+
 <body>
-    <style>
-        @font-face {
+<style>
+
+@font-face {
     font-family: FiraCode;
     src: url(FiraCode-VariableFont_wght.ttf)
 }
@@ -233,8 +236,9 @@ h3 {
     font-family: Firacode;
 }
 
-/* @media only screen and (min-width: 1900px) { */
-    </style>
+</style>
+
+
     <div class="start">
         <br>
         <br>
