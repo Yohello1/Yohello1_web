@@ -3,8 +3,7 @@
     <meta charset="UTF-8">
 
     <title>Yohello</title>
-    <-- <link rel="stylesheet" href="indexx.css"> -->
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
 
 <?php
@@ -91,26 +90,27 @@ $project2 = "Need to make";
                 float: right;
                 right: 0%;
             }
+
             .container4 {
-            position: relative;
-            top: 130px;
-            height: 380px;
-            width: 100%;
-            float: right;
-            right: 0;
-        }
+                position: relative;
+                top: 130px;
+                height: 380px;
+                width: 100%;
+                float: right;
+                right: 0;
+            }
 
         }
 
         @media only screen and (min-width: 900px) {
             .container4 {
-            position: relative;
-            top: 40px;
-            height: 380px;
-            width: 50%;
-            float: right;
-            right: 5%;
-        }
+                position: relative;
+                top: 40px;
+                height: 380px;
+                width: 50%;
+                float: right;
+                right: 5%;
+            }
 
 
             .container3 {
@@ -161,89 +161,98 @@ $project2 = "Need to make";
 
             }
 
-            .left-button {
-                width: 25%;
-                float: left;
-                position: relative;
-                left: 9%;
-            }
 
-            .text-block2 {
-                position: absolute;
-                bottom: 85%;
-                left: 20%;
-                background-color: rgba(0, 0, 0, 0.24);
-                color: white;
-                padding-left: 20px;
-                padding-right: 20px;
-                font-family: Firacode;
-            }
-
-            .text-block {
-                position: absolute;
-                bottom: 70%;
-                left: 20%;
-                background-color: rgba(0, 0, 0, 0.24);
-                color: white;
-                padding-left: 20px;
-                padding-right: 20px;
-                font-family: Firacode;
-            }
-
-            .container2 {
-                position: relative;
-                height: 800px;
-                width: 33%;
-                float: left;
-                left: 9%;
-                right: -10%;
-            }
-
-            .start {
-                padding-bottom: 10px;
-                padding-top: 10px;
-            }
-
-            .left-col,
-            .right-col {
-                text-align: center;
-                width: 33.33%;
-                float: left;
-            }
-
-            .center-col {
-                text-align: center;
-                width: 33.33%;
-                float: left;
-
-            }
-
-            body {
-                background-color: #333333;
-            }
-
-            a {
-                color: #ebebeb;
-                font-family: Firacode;
-            }
-
-
-            h1 {
-                font-family: FiraCode;
-                color: #EEEEEE;
-                text-align: left;
-                font-size: 60pt;
-                font-family: Firacode;
-            }
-
-            h2 {
-                font-family: FiraCode;
-                color: #ebebeb;
-                text-align: center;
-                font-size: 20pt;
-                font-family: Firacode;
-            }
         }
+
+
+
+        .left-button {
+            width: 25%;
+            float: left;
+            position: relative;
+            left: 9%;
+        }
+
+        .text-block2 {
+            position: absolute;
+            bottom: 85%;
+            left: 20%;
+            background-color: rgba(0, 0, 0, 0.24);
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: Firacode;
+        }
+
+        .text-block {
+            position: absolute;
+            bottom: 70%;
+            left: 20%;
+            background-color: rgba(0, 0, 0, 0.24);
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: Firacode;
+        }
+
+        .container2 {
+            position: relative;
+            height: 800px;
+            width: 33%;
+            float: left;
+            left: 9%;
+            right: -10%;
+        }
+
+        .start {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .left-col,
+        .right-col {
+            text-align: center;
+            width: 33.33%;
+            float: left;
+        }
+
+        .center-col {
+            text-align: center;
+            width: 33.33%;
+            float: left;
+
+        }
+
+        body {
+            background-color: #333333;
+        }
+
+        a {
+            color: #ebebeb;
+            font-family: Firacode;
+        }
+
+
+        h1 {
+            font-family: FiraCode;
+            color: #EEEEEE;
+            text-align: left;
+            font-size: 60pt;
+            font-family: Firacode;
+        }
+
+        h2 {
+            font-family: FiraCode;
+            color: #ebebeb;
+            text-align: center;
+            font-size: 20pt;
+            font-family: Firacode;
+        }
+
+
+
+
+
 
         p {
             text-align: left;
