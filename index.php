@@ -33,7 +33,134 @@ $project2 = "Need to make";
             src: url(FiraCode-VariableFont_wght.ttf)
         }
 
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (max-width: 900px) {
+            .introtext {
+                float: left;
+                width: 100%;
+            }
+
+            .cgivfxtext {
+                float: right;
+                width: 100%;
+            }
+
+            img {
+                float: left;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+
+            .rectangle2 {
+                float: left;
+                position: relative;
+                top: -10px;
+                height: 5px;
+                width: 100px;
+                background-color: tomato;
+            }
+
+            .rectangle3 {
+                float: left;
+                position: relative;
+                top: -10px;
+                height: 5px;
+                width: 100px;
+                background-color: rgb(235, 144, 59);
+            }
+
+            .Contactinfo {
+                float: left;
+                width: 100%;
+            }
+
+            .container2 {
+                position: relative;
+                height: 700px;
+                width: 100%;
+                float: left;
+                left: 0;
+                right: 0;
+            }
+
+            .container3 {
+                top: 50px;
+                position: relative;
+                height: 380px;
+                width: 100%;
+                float: right;
+                right: 0%;
+            }
+            .container4 {
+            position: relative;
+            top: 130px;
+            height: 380px;
+            width: 100%;
+            float: right;
+            right: 0;
+        }
+
+        }
+
+        @media only screen and (min-width: 900px) {
+            .container4 {
+            position: relative;
+            top: 40px;
+            height: 380px;
+            width: 50%;
+            float: right;
+            right: 5%;
+        }
+
+
+            .container3 {
+                top: 0px;
+
+                position: relative;
+                height: 380px;
+                width: 50%;
+                float: right;
+                right: 5%;
+            }
+
+            .Contactinfo {
+                float: left;
+                width: 40%;
+            }
+
+            .rectangle3 {
+                float: right;
+                position: relative;
+                top: -10px;
+                height: 5px;
+                width: 100px;
+                background-color: rgb(235, 144, 59);
+            }
+
+
+
+            .rectangle2 {
+                float: right;
+                position: relative;
+                top: -10px;
+                height: 5px;
+                width: 100px;
+                background-color: tomato;
+            }
+
+            .introtext {
+                float: left;
+                width: 40%;
+            }
+
+            img {
+                float: left;
+                width: 50%;
+                height: auto;
+                object-fit: cover;
+
+            }
+
             .left-button {
                 width: 25%;
                 float: left;
@@ -70,11 +197,6 @@ $project2 = "Need to make";
                 float: left;
                 left: 9%;
                 right: -10%;
-            }
-
-            .Contactinfo {
-                float: left;
-                width: 40%;
             }
 
             .start {
@@ -121,10 +243,6 @@ $project2 = "Need to make";
                 font-size: 20pt;
                 font-family: Firacode;
             }
-
-            img {
-                object-fit: cover;
-            }
         }
 
         p {
@@ -161,36 +279,10 @@ $project2 = "Need to make";
             font-family: Firacode;
         }
 
-        .container2 {
-            position: relative;
-            height: 800px;
-            width: 33%;
-            float: left;
-            left: 9%;
-            right: -10%;
-        }
-
         h4 {
             color: #111111;
             text-align: center;
             font-family: Firacode;
-        }
-
-        .container3 {
-            position: relative;
-            height: 380px;
-            width: 50%;
-            float: right;
-            right: 5%;
-        }
-
-        .container4 {
-            position: relative;
-            top: 40px;
-            height: 380px;
-            width: 50%;
-            float: right;
-            right: 5%;
         }
 
         .h31 {
@@ -210,11 +302,6 @@ $project2 = "Need to make";
             background-color: tomato;
         }
 
-        .introtext {
-            float: left;
-            width: 40%;
-        }
-
         p {
             font-family: FiraCode;
             color: whitesmoke;
@@ -228,19 +315,6 @@ $project2 = "Need to make";
             height: 200px;
         }
 
-        .cgivfxtext {
-            float: right;
-            width: 40%;
-        }
-
-        .rectangle2 {
-            float: right;
-            position: relative;
-            top: -10px;
-            height: 5px;
-            width: 100px;
-            background-color: tomato;
-        }
 
         h3 {
             font-family: FiraCode;
@@ -249,26 +323,6 @@ $project2 = "Need to make";
             padding-right: 5%;
             font-size: 18pt;
             font-family: Firacode;
-        }
-
-        .rectangle3 {
-            float: right;
-            position: relative;
-            top: -10px;
-            height: 5px;
-            width: 100px;
-            background-color: rgb(235, 144, 59);
-        }
-
-        img {
-            float: left;
-            width: 50%;
-            height: auto;
-        }
-
-        .Contactinfo {
-            float: left;
-            width: 40%;
         }
 
         h3 {
