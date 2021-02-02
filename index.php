@@ -93,11 +93,11 @@ $project2 = "Need to make";
 
             .container4 {
                 position: relative;
-                top: 130px;
+                top: 40px;
                 height: 380px;
                 width: 100%;
                 float: right;
-                right: 0;
+                right: 0%;
             }
 
         }
@@ -112,6 +112,10 @@ $project2 = "Need to make";
                 right: 5%;
             }
 
+            .cgivfxtext {
+                float: right;
+                width: 40%;
+            }
 
             .container3 {
                 top: 0px;
@@ -161,47 +165,44 @@ $project2 = "Need to make";
 
             }
 
+            .left-button {
+                width: 25%;
+                float: left;
+                position: relative;
+                left: 9%;
+            }
 
-        }
+            .text-block2 {
+                position: absolute;
+                bottom: 85%;
+                left: 20%;
+                background-color: rgba(0, 0, 0, 0.24);
+                color: white;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-family: Firacode;
+            }
 
+            .text-block {
+                position: absolute;
+                bottom: 70%;
+                left: 20%;
+                background-color: rgba(0, 0, 0, 0.24);
+                color: white;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-family: Firacode;
+            }
 
+            .container2 {
+                position: relative;
+                height: 800px;
+                width: 33%;
+                float: left;
+                left: 9%;
+                right: -10%;
+            }
 
-        .left-button {
-            width: 25%;
-            float: left;
-            position: relative;
-            left: 9%;
-        }
-
-        .text-block2 {
-            position: absolute;
-            bottom: 85%;
-            left: 20%;
-            background-color: rgba(0, 0, 0, 0.24);
-            color: white;
-            padding-left: 20px;
-            padding-right: 20px;
-            font-family: Firacode;
-        }
-
-        .text-block {
-            position: absolute;
-            bottom: 70%;
-            left: 20%;
-            background-color: rgba(0, 0, 0, 0.24);
-            color: white;
-            padding-left: 20px;
-            padding-right: 20px;
-            font-family: Firacode;
-        }
-
-        .container2 {
-            position: relative;
-            height: 800px;
-            width: 33%;
-            float: left;
-            left: 9%;
-            right: -10%;
         }
 
         .start {
@@ -248,11 +249,6 @@ $project2 = "Need to make";
             font-size: 20pt;
             font-family: Firacode;
         }
-
-
-
-
-
 
         p {
             text-align: left;
