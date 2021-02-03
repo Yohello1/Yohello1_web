@@ -32,7 +32,7 @@ $project2 = "Need to make";
             src: url(FiraCode-VariableFont_wght.ttf)
         }
 
-        @media only screen and (max-width: 900px) {
+        @media only screen and (max-width: 1200px) {
             .introtext {
                 float: left;
                 width: 100%;
@@ -100,9 +100,29 @@ $project2 = "Need to make";
                 right: 0%;
             }
 
+p{
+font-family:FiraCode;
+color:whitesmoke;
+line-height:40px;
+font-size:25pt;
+}
+
+
+
         }
 
-        @media only screen and (min-width: 900px) {
+	@media only screen and (min-width: 1201px) {
+p{
+font-family:FiraCode;
+color:whitesmoke;
+line-height:30px;
+font-size:15pt;
+}
+
+
+
+
+
             .container4 {
                 position: relative;
                 top: 40px;
@@ -305,13 +325,6 @@ $project2 = "Need to make";
             height: 5px;
             width: 100px;
             background-color: tomato;
-        }
-
-        p {
-            font-family: FiraCode;
-            color: whitesmoke;
-            line-height: 30px;
-            font-size: 15pt;
         }
 
         .nextpoint {
