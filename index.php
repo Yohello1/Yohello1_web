@@ -418,7 +418,6 @@ font-size:15pt;
         ?>
     </div>
     <br>
-    <div class="nextpoint"></div>
 
     <div class="Contactinfo">
         <h3>Contact Information</h3>
