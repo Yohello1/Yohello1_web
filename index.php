@@ -69,8 +69,8 @@ $project2 = "Need to make";
             }
 
             .Contactinfo {
-                float: left;
-                width: 100%;
+                float: right;
+                width: 50%;
             }
 
             .container2 {
