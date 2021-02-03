@@ -175,6 +175,7 @@ font-size:15pt;
             .introtext {
                 float: left;
                 width: 40%;
+                padding-right:10%;
             }
 
             img {
@@ -419,6 +420,15 @@ font-size:15pt;
     <br>
     <div class="nextpoint"></div>
 
+    <div class="Contactinfo">
+        <h3>Contact Information</h3>
+        <div class="rectangle4"></div>
+        <p>Insert Contact information.
+            <br> <br>I will not work for you.<br> This will doubtfully change
+        </p>
+    </div>
+    <div class="nextpoint"></div>
+
     <div class="cgivfxtext">
         <h3>Cgi and Vfx</h3>
         <div class="rectangle2"></div>
@@ -451,13 +461,7 @@ font-size:15pt;
 
     </div>
     <br>
-    <div class="Contactinfo">
-        <h3>Contact Information</h3>
-        <div class="rectangle4"></div>
-        <p>Insert Contact information.
-            <br> <br>I will not work for you.<br> This will doubtfully change
-        </p>
-    </div>
+
     <div class="nextpoint"></div>
     <br>
     <br>
