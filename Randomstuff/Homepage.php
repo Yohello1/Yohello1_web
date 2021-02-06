@@ -12,16 +12,6 @@
     <input type="submit" value="Submit" />
 
   </form>
-
-  <?php
-    echo $_GET["name"];
-
-
-
-
-
-
-  ?>
 </body>
   <!-- <script>
     var form = document.getElementById("name");
