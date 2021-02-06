@@ -1,7 +1,7 @@
 <body>
   <h1>Test</h1>
 
-  <form method="get" action="contact.php" method="post">
+  <form action="contact.php" method="post">
 
     <label for="name">Name</label>
 
@@ -13,11 +13,3 @@
 
   </form>
 </body>
-  <!-- <script>
-    var form = document.getElementById("name");
-    form.onsubmit = function (e) {
-        e.preventDefault();
-        console.log(form.name.value);
-        form.reset();
-    };
-  </script> -->
