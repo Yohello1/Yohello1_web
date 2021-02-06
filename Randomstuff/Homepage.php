@@ -9,7 +9,7 @@
     <input type="mail" id="mail" name="mail" />
     <input type="stuff" id="stuff" name="stuff" />
 
-    <input type="submit" value="Submit" />
+    <input type="submit" name="submit" />
 
   </form>
 </body>

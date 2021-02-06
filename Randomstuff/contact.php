@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
     $subject = "subject";
     $txt = "You have gotten a message from: ".$name.".\n\n".$message;
 
-    mail($mailTo, $subject, $txt, $headers);
+    mail($MailTo, $subject, $txt, $headers);
     header("Location:index.php?mailsend");
 }
 
