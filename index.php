@@ -381,6 +381,7 @@ font-size:15pt;
     <br>
     <br>
     <br>
+    <!-- Redo this with flexbox -->
     <div class="container2">
         <a href="<?php echo $project1 ?>">
             <img src="<?php echo $json['front_page'][0]['img']; ?>" style="width:100%; height:100%">

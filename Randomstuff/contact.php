@@ -14,9 +14,9 @@ if (isset($_POST['submit'])) {
     // mail("info@yohello.ca", "testing php mail", "Body of test php mail() function");
     // // header("Location:../index.php?mailsend");
  
-$to_email = 'yahallo123@yohello.ca';
+$to_email = 'mp2702737@gmail.com';
 $subject = 'Testing PHP Mail';
 $message = 'This mail is sent using the PHP mail function';
-$headers = 'From: noreply @ company . com';
+$headers = 'From: noreply@company.com';
 mail($to_email,$subject,$message,$headers);
 }
