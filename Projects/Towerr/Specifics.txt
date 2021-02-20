@@ -1,6 +1,0 @@
-65,997 verts 
-<br>41 Objects 
-<br>127,869 edges 
-<br>61,867 Faces
-<br>15hr Simulation time 
-<br>1hr render time
