@@ -36,7 +36,7 @@ $code3git   = $json['code'][2]['github'];
     <div class="break">
     <div class="cg-block">
          <a href="tower.php">
-
+<img src="../Images/final.png">
         </a>
     </div>
     <div class="code-block">
