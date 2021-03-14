@@ -36,7 +36,7 @@ $code3git   = $json['code'][2]['github'];
     <div class="break">
     <div class="cg-block">
          <a href="tower.php">
-<img src="../Images/Castle.jpg">
+<img src="../Images/Castle.png">
         </a>
     </div>
     <div class="code-block">
@@ -47,7 +47,7 @@ $code3git   = $json['code'][2]['github'];
     </div>
     <div class="cg-block">
          <a href="x-mas.php">
-         <img src="Xmas/Xmas.jpg">
+         <img src="Xmas/Xmas.png">
 
         </a>
     </div>
@@ -58,7 +58,7 @@ $code3git   = $json['code'][2]['github'];
     </div>
     <div class="cg-block">
          <a href="tower.php">
-         <img src="../Images/Castle.jpg">
+         <img src="../Images/Castle.png">
 
         </a>
     </div>
