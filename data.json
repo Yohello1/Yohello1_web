@@ -20,8 +20,7 @@
     ],
 
 
-    "cgi": [
-        {
+    "cgi": [{
             "img": "Images/Tower.jpg",
             "caption": "Cannon",
             "link": "Projects/tower.php",
