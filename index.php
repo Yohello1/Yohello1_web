@@ -100,24 +100,24 @@ $project2 = "Need to make";
                 right: 0%;
             }
 
-p{
-font-family:FiraCode;
-color:whitesmoke;
-line-height:40px;
-font-size:25pt;
-}
+            p {
+                font-family: FiraCode;
+                color: whitesmoke;
+                line-height: 40px;
+                font-size: 25pt;
+            }
 
 
 
         }
 
-	@media only screen and (min-width: 1201px) {
-p{
-font-family:FiraCode;
-color:whitesmoke;
-line-height:30px;
-font-size:15pt;
-}
+        @media only screen and (min-width: 1201px) {
+            p {
+                font-family: FiraCode;
+                color: whitesmoke;
+                line-height: 30px;
+                font-size: 15pt;
+            }
 
 
 
@@ -175,7 +175,7 @@ font-size:15pt;
             .introtext {
                 float: left;
                 width: 40%;
-                padding-right:10%;
+                padding-right: 10%;
             }
 
             img {
