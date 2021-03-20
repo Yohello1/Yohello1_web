@@ -19,4 +19,13 @@ $subject = 'Testing PHP Mail';
 $message = 'This mail is sent using the PHP mail function';
 $headers = 'From: noreply@company.com';
 mail($to_email,$subject,$message,$headers);
+
+if (mail($to_email, $subject, $message, $headers))
+{
+    echo "Message accepted";
+}
+else
+{
+    echo "Error: Message not accepted";
+}
 }
