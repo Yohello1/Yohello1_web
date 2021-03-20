@@ -1,6 +1,46 @@
 @font-face {
     font-family: FiraCode;
-    src: url(../FiraCode-VariableFont_wght.ttf)
+    src: url(../../FiraCode-VariableFont_wght.ttf)
 }
 
-h1 {}
+body {
+    background-color: #333;
+    margin: 0
+}
+
+h1 {
+    font-family: FiraCode;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #EEE;
+}
+
+.break {
+    height: 5px;
+    background-color: white;
+    margin: 0;
+    padding: 0px;
+}
+
+table,
+td,
+th {
+    border: 1px solid #333;
+    text-align: left;
+    color: #EEE;
+    font-family: FiraCode;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    float: left;
+}
+
+th,
+td {
+    font-family: FiraCode;
+    padding: 15px;
+}
