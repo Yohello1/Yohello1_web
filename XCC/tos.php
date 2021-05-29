@@ -9,11 +9,13 @@
 
 <body>
     <script src="/utils.js"></script>
-    <?php
-    $menu = fopen("../menu.html", "r") or die("ERROR! UNABLE TO OPEN MENU FILE");
-    echo fread($menu, filesize("../menu.html"));
-    fclose($menu);
-    ?>
+    <div class="vl"></div>
+    <div class="top2">
+    <a class="top_bar" href="http://stfx-xcc.herokuapp.com/">Projects</a>
+    <a class="top_bar" href="http://stfx-xcc.herokuapp.com/">About us</a>
+    <a class="top_bar" href="http://stfx-xcc.herokuapp.com/">Contact</a>
+    </div>
+    </header>
 
     <div class="content">
     <br>
