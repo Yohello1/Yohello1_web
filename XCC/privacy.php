@@ -2,8 +2,7 @@
     <title>Xavier Coding Club</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
-    <link href="../index.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="../images/elogo_1.png">
+    <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
 
 
