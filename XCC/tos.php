@@ -18,8 +18,7 @@
     </header>
 
     <div class="content">
-    <br>
-    <br>
+
     <h1>Terms of service</h1>
     <p>We have to make a proper terms of service soon</P>
     </div>
