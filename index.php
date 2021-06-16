@@ -381,7 +381,8 @@ $project2 = "Need to make";
     <br>
     <br>
     <br>
-    <!-- Redo this with flexbox -->
+    <!-- Redo this with flexbox -->            
+    <!-- <?php echo $json['front_page'][0]['img']; ?> -->
     <div class="container2">
         <a href="<?php echo $project1 ?>">
             <img src="<?php echo $json['front_page'][0]['img']; ?>" style="width:100%; height:100%">
@@ -392,14 +393,14 @@ $project2 = "Need to make";
         </a>
     </div>
     <div class="container3">
-        <img src="<?php echo $json['front_page'][1]['img']; ?>" style="width:100%; height:100%">
+        <img src="https://placewaifu.com/image/1920/<?php echo rand(500,800); ?>" style="width:100%; height:100%">
         <div class="text-block">
             <h4><?php echo $json['front_page'][1]['caption']; ?></h4>
             <p><?php echo $json['front_page'][1]['sub']; ?></p>
         </div>
     </div>
     <div class="container4">
-        <img src="<?php echo $json['front_page'][2]['img']; ?>" style="width:100%; height:100%">
+        <img src="https://placewaifu.com/image/1920/<?php echo rand(500,800); ?>" style="width:100%; height:100%">
         <div class="text-block">
             <h4><?php echo $json['front_page'][2]['caption']; ?></h4>
             <p><?php echo $json['front_page'][2]['sub']; ?></p>
