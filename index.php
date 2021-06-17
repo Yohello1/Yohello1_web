@@ -20,6 +20,17 @@ $cgi = $json['for_show'][0]['cgi'];
 
 $project1 = "Projects/tower.php";
 $project2 = "Need to make";
+
+function anime(){
+    $width = rand(240,2160);
+    $heightPartlow = $width/ 3;
+    $heightParthigh = $heightPartlow + 500;
+    $height = rand($heightPartlow, $heightParthigh);
+    echo 'https://placewaifu.com/image/'. $width . '/'. $height;
+}
+
+
+
 ?>
 
 
@@ -105,6 +116,10 @@ $project2 = "Need to make";
                 color: whitesmoke;
                 line-height: 40px;
                 font-size: 25pt;
+            }
+
+            .anime_waifu{
+                object-fit:cover;
             }
 
 
@@ -393,14 +408,14 @@ $project2 = "Need to make";
         </a>
     </div>
     <div class="container3">
-        <img src="https://placewaifu.com/image/1920/<?php echo rand(500,800); ?>" style="width:100%; height:100%">
+        <img class="anime_waifu" src="<?php anime(); ?>" style="width:100%; height:100%">
         <div class="text-block">
             <h4><?php echo $json['front_page'][1]['caption']; ?></h4>
             <p><?php echo $json['front_page'][1]['sub']; ?></p>
         </div>
     </div>
     <div class="container4">
-        <img src="https://placewaifu.com/image/1920/<?php echo rand(500,800); ?>" style="width:100%; height:100%">
+        <img class="anime_waifu" src="<?php anime(); ?>" style="width:100%; height:100%">
         <div class="text-block">
             <h4><?php echo $json['front_page'][2]['caption']; ?></h4>
             <p><?php echo $json['front_page'][2]['sub']; ?></p>
