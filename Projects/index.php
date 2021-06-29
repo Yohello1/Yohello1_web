@@ -2,6 +2,28 @@
   <title>Project</title>
   <link rel="stylesheet" href="../indexx.css">
 </head>
+<?php
+
+$jsondata = file_get_contents("projects.json");
+$json = json_decode($jsondata, true);
+
+
+$codeLenght = count($json['text']);
+$codeLenght *= 200;
+$codeLenght += 80;
+
+$imagesLenght = count($json['images']);
+$imagesLenght *= 480;
+$imagesLenght += 80;
+
+if ($imagesLenght > $codeLenght) {
+  $finalSize = $imagesLenght;
+} else if ($imagesLenght < $codeLenght) {
+  $finalSize = $codeLenght;
+} else {
+  $finalSize = $codeLenght;
+}
+?>
 
 <style>
   h1 {
@@ -14,6 +36,7 @@
     opacity: 1;
     text-align: center;
     font-size: 20pt;
+    padding-right: 0%;
   }
 
   p {
@@ -27,20 +50,21 @@
 
   .section_title {
     width: 49.8%;
-  }
-
-  #code {
-    float: left;
+    height: 80px;
   }
 
   #cgi {
+    float: left;
+  }
+
+  #code {
     float: right;
   }
 
   .divider {
     background-color: white;
     width: 0.4%;
-    height: 500px;
+    height: <?php echo $finalSize; ?>px;
     float: left;
   }
 
@@ -61,6 +85,7 @@
 
   .words {
     text-align: center;
+    height: 200px;
   }
 </style>
 
@@ -68,7 +93,7 @@
   <h1>Projects</h1>
   <div class="line"></div>
 
-  <div class="section_title" id="code">
+  <div class="section_title" id="cgi">
     <h2>Things with pictures!!!!</h2>
     <div class="pics" style="background-image: url('https://placewaifu.com/image/200');">
       <div class="dark_box">
@@ -81,14 +106,14 @@
   <div class="divider">
   </div>
 
-  <div class="section_title" id="cgi">
+  <div class="section_title" id="code">
     <h2>Things without pictures</h2>
-    <div class="cgi">
-      <div class="words">
-        <h3>[Project Name]</h3>
-        <p>[Short descrptions]</p>
-        <p><a href="[link]">[Website] </a></p>
-      </div>
+    <div class="words">
+      <h3><?php echo $json['names'][0]['First']; ?></h3>
+      <p><?php echo $json['names'][0]['Last']; ?></p>
+      <p><a href="[link]"><?php echo $finalSize; ?></a></p>
     </div>
   </div>
 </body>
+
+<!-- $code = $json['name'][0]['code']; -->
