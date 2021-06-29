@@ -14,7 +14,7 @@ $codeLenght += 80;
 
 $imagesLenght = count($json['images']);
 $imagesLenght *= 480;
-$imagesLenght += 80;
+$imagesLenght += 560;
 
 if ($imagesLenght > $codeLenght) {
   $finalSize = $imagesLenght;
@@ -95,12 +95,17 @@ if ($imagesLenght > $codeLenght) {
 
   <div class="section_title" id="cgi">
     <h2>Things with pictures!!!!</h2>
-    <div class="pics" style="background-image: url('https://placewaifu.com/image/200');">
-      <div class="dark_box">
-        <h3> [Project name] </h3>
-        <p> [small description] </p>
-      </div>
-    </div>
+    <?php
+    for($i = 0; $i < count($json['text']); $i++)
+{    
+  echo '<div class="pics" style="background-image: url(\'' . $json['images'][$i]['image'] .'\');">';
+  echo '<div class="dark_box">';
+  echo  '<h3>' .  $json['images'][$i]['Project_name'] . '</h3>';
+  echo  '<p> ' .  $json['images'][$i]['Project_description'] . '</p>';
+  echo '</div>';
+  echo '</div>';
+}
+    ?>
   </div>
 
   <div class="divider">
@@ -108,11 +113,16 @@ if ($imagesLenght > $codeLenght) {
 
   <div class="section_title" id="code">
     <h2>Things without pictures</h2>
-    <div class="words">
-      <h3><?php echo $json['names'][0]['First']; ?></h3>
-      <p><?php echo $json['names'][0]['Last']; ?></p>
-      <p><a href="[link]"><?php echo $finalSize; ?></a></p>
-    </div>
+  <?php  for($i = 0; $i < count($json['text']); $i++)
+
+{    
+echo  '<div class="words">';
+echo   '<h3>' . $json['text'][$i]['Project_name'] . '</h3>';
+echo   '<p>' . $json['text'][$i]['Project_description'] . '</p>';
+echo   '<p><a href="' . $json['text'][$i]['link'] . '">Link to the project</a></p>';
+echo   '</div>';
+  }
+  ?> 
   </div>
 </body>
 
