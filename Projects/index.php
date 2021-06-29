@@ -96,15 +96,14 @@ if ($imagesLenght > $codeLenght) {
   <div class="section_title" id="cgi">
     <h2>Things with pictures!!!!</h2>
     <?php
-    for($i = 0; $i < count($json['text']); $i++)
-{    
-  echo '<div class="pics" style="background-image: url(\'' . $json['images'][$i]['image'] .'\');">';
-  echo '<div class="dark_box">';
-  echo  '<h3>' .  $json['images'][$i]['Project_name'] . '</h3>';
-  echo  '<p> ' .  $json['images'][$i]['Project_description'] . '</p>';
-  echo '</div>';
-  echo '</div>';
-}
+    for ($i = 0; $i < count($json['text']); $i++) {
+      echo '<div class="pics" style="background-image: url(\'' . $json['images'][$i]['image'] . '\');">';
+      echo '<div class="dark_box">';
+      echo  '<h3>' .  $json['images'][$i]['Project_name'] . '</h3>';
+      echo  '<p> ' .  $json['images'][$i]['Project_description'] . '</p>';
+      echo '</div>';
+      echo '</div>';
+    }
     ?>
   </div>
 
@@ -113,16 +112,14 @@ if ($imagesLenght > $codeLenght) {
 
   <div class="section_title" id="code">
     <h2>Things without pictures</h2>
-  <?php  for($i = 0; $i < count($json['text']); $i++)
-
-{    
-echo  '<div class="words">';
-echo   '<h3>' . $json['text'][$i]['Project_name'] . '</h3>';
-echo   '<p>' . $json['text'][$i]['Project_description'] . '</p>';
-echo   '<p><a href="' . $json['text'][$i]['link'] . '">Link to the project</a></p>';
-echo   '</div>';
-  }
-  ?> 
+    <?php for ($i = 0; $i < count($json['text']); $i++) {
+      echo  '<div class="words">';
+      echo   '<h3>' . $json['text'][$i]['Project_name'] . '</h3>';
+      echo   '<p>' . $json['text'][$i]['Project_description'] . '</p>';
+      echo   '<p><a href="' . $json['text'][$i]['link'] . '">Link to the project</a></p>';
+      echo   '</div>';
+    }
+    ?>
   </div>
 </body>
 
