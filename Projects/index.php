@@ -7,7 +7,6 @@
 $jsondata = file_get_contents("projects.json");
 $json = json_decode($jsondata, true);
 
-
 $codeLenght = count($json['text']);
 $codeLenght *= 200;
 $codeLenght += 80;
@@ -16,19 +15,19 @@ $imagesLenght = count($json['images']);
 $imagesLenght *= 480;
 $imagesLenght += 560;
 
-if ($imagesLenght > $codeLenght) {
-  $finalSize = $imagesLenght;
+if ($imagesLenght > $codeLenght)
+ {
+    $finalSize = $imagesLenght;
 } else if ($imagesLenght < $codeLenght) {
   $finalSize = $codeLenght;
 } else {
   $finalSize = $codeLenght;
 }
 ?>
-
 <style>
   h1 {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
     opacity: 1;
   }
 
@@ -88,11 +87,14 @@ if ($imagesLenght > $codeLenght) {
     height: 200px;
   }
 </style>
-
 <body>
+<?php
+  $menu = fopen("../menu.html", "r") or die("Can't open da file menu file");
+  echo fread($menu, filesize("../menu.html"));
+  fclose($menu);
+  ?>
   <h1>Projects</h1>
   <div class="line"></div>
-
   <div class="section_title" id="cgi">
     <h2>Things with pictures!!!!</h2>
     <?php
@@ -106,10 +108,8 @@ if ($imagesLenght > $codeLenght) {
     }
     ?>
   </div>
-
   <div class="divider">
   </div>
-
   <div class="section_title" id="code">
     <h2>Things without pictures</h2>
     <?php for ($i = 0; $i < count($json['text']); $i++) {
