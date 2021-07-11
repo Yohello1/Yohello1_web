@@ -54,10 +54,13 @@ if ($imagesLenght > $codeLenght)
 
   #cgi {
     float: left;
+    display:inline-block;
+
   }
 
   #code {
     float: right;
+    display:inline-block;
   }
 
   .divider {
@@ -94,7 +97,6 @@ if ($imagesLenght > $codeLenght)
   fclose($menu);
   ?>
   <h1>Projects</h1>
-  <div class="line"></div>
   <div class="section_title" id="cgi">
     <h2>Things with pictures!!!!</h2>
     <?php
