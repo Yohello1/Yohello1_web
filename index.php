@@ -369,7 +369,11 @@ function anime(){
         }
     </style>
 
-
+<?php
+  $menu = fopen("menu.html", "r") or die("Can't open da file menu file");
+  echo fread($menu, filesize("menu.html"));
+  fclose($menu);
+  ?>
     <div class="start">
         <h1>Yohello</h1>
     </div>
@@ -388,7 +392,7 @@ function anime(){
 
         <div class="right-col">
 
-            <h2><a href="contact.html">Contact Me</a></h2>
+            <h2><a href="contact.php">Contact Me</a></h2>
         </div>
 
     </div>
