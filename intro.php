@@ -5,10 +5,15 @@
 </head>
 
 <body>
-
+    <?php
+    $doc = $_SERVER['DOCUMENT_ROOT'];
+    $menu .= $doc . "/menu.php";
+    echo $menu;
+    require $menu;
+    ?>
     <h1>Introduction</h1>
     <hr>
-    <p>I'm Yo Hello, I live in Canada, play 
+    <p>I'm Yo Hello, I live in Canada, play
         video games, do vfx, and some coding. Right now I live in the mythical land of Canada, in the eastern time
         zone. I play a couple of video games mainly rotating through Minecraft, Civilzation 6, and Rocket League
         with friends. I play minecraft on a server with a few people, my base was hasily put together and wasn't

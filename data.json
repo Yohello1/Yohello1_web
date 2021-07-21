@@ -23,14 +23,12 @@
     "cgi": [{
             "img": "Images/Tower.jpg",
             "caption": "Cannon",
-            "link": "Projects/tower.php",
             "Date": "2020 8-12 "
 
         },
         {
             "img": "Images/untitled17.jpg",
             "caption": "X-mas",
-            "link": "Projects/x-mas.php",
             "Date": "2019 ???? "
         },
         {

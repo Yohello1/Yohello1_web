@@ -3,8 +3,7 @@
     <meta charset="UTF-8">
 
     <title>Yohello</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-</head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /></head>
 
 <?php
 
@@ -21,12 +20,13 @@ $cgi = $json['for_show'][0]['cgi'];
 $project1 = "Projects/tower.php";
 $project2 = "Need to make";
 
-function anime(){
-    $width = rand(240,2160);
-    $heightPartlow = $width/ 3;
+function anime()
+{
+    $width = rand(240, 2160);
+    $heightPartlow = $width / 3;
     $heightParthigh = $heightPartlow + 500;
     $height = rand($heightPartlow, $heightParthigh);
-    echo 'https://placewaifu.com/image/'. $width . '/'. $height;
+    echo 'https://placewaifu.com/image/' . $width . '/' . $height;
 }
 
 
@@ -59,6 +59,8 @@ function anime(){
                 width: 100%;
                 height: auto;
                 object-fit: cover;
+                z-index: 1;
+                position: relative;
             }
 
             .rectangle2 {
@@ -68,6 +70,8 @@ function anime(){
                 height: 5px;
                 width: 100px;
                 background-color: tomato;
+                z-index: -1;
+
             }
 
             .rectangle3 {
@@ -118,8 +122,8 @@ function anime(){
                 font-size: 25pt;
             }
 
-            .anime_waifu{
-                object-fit:cover;
+            .anime_waifu {
+                object-fit: cover;
             }
 
 
@@ -198,6 +202,9 @@ function anime(){
                 width: 50%;
                 height: auto;
                 object-fit: cover;
+                z-index: 10;
+                position: relative;
+
 
             }
 
@@ -367,13 +374,24 @@ function anime(){
             font-size: 18pt;
             font-family: Firacode;
         }
+
+        .rectangle {
+            position: relative;
+            top: -10px;
+            height: 5px;
+            width: 100px;
+            background-color: tomato;
+            z-index: -1;
+
+        }
     </style>
 
-<?php
-  $menu = fopen("menu.html", "r") or die("Can't open da file menu file");
-  echo fread($menu, filesize("menu.html"));
-  fclose($menu);
-  ?>
+    <?php
+    $doc = $_SERVER['DOCUMENT_ROOT'];
+    $menu .= $doc . "/menu.php";
+        echo $menu;
+    require $menu;
+    ?>
     <div class="start">
         <h1>Yohello</h1>
     </div>
@@ -400,16 +418,16 @@ function anime(){
     <br>
     <br>
     <br>
-    <!-- Redo this with flexbox -->            
+    <!-- Redo this with flexbox -->
     <!-- <?php echo $json['front_page'][0]['img']; ?> -->
     <div class="container2">
-        <a href="<?php echo $project1 ?>">
-            <img src="<?php echo $json['front_page'][0]['img']; ?>" style="width:100%; height:100%">
-            <div class="text-block">
-                <h4><?php echo $json['front_page'][0]['caption']; ?></h4>
-                <p><?php echo $json['front_page'][0]['sub']; ?></p>
-            </div>
-        </a>
+        <!-- <a href="<?php echo $project1 ?>"> -->
+        <img src="<?php echo $json['front_page'][0]['img']; ?>" style="width:100%; height:100%">
+        <div class="text-block">
+            <h4><?php echo $json['front_page'][0]['caption']; ?></h4>
+            <p><?php echo $json['front_page'][0]['sub']; ?></p>
+        </div>
+        <!-- </a> -->
     </div>
     <div class="container3">
         <img class="anime_waifu" src="<?php anime(); ?>" style="width:100%; height:100%">

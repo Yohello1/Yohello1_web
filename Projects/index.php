@@ -15,9 +15,8 @@ $imagesLenght = count($json['images']);
 $imagesLenght *= 480;
 $imagesLenght += 560;
 
-if ($imagesLenght > $codeLenght)
- {
-    $finalSize = $imagesLenght;
+if ($imagesLenght > $codeLenght) {
+  $finalSize = $imagesLenght;
 } else if ($imagesLenght < $codeLenght) {
   $finalSize = $codeLenght;
 } else {
@@ -54,13 +53,13 @@ if ($imagesLenght > $codeLenght)
 
   #cgi {
     float: left;
-    display:inline-block;
+    display: inline-block;
 
   }
 
   #code {
     float: right;
-    display:inline-block;
+    display: inline-block;
   }
 
   .divider {
@@ -90,11 +89,13 @@ if ($imagesLenght > $codeLenght)
     height: 200px;
   }
 </style>
+
 <body>
-<?php
-  $menu = fopen("../menu.html", "r") or die("Can't open da file menu file");
-  echo fread($menu, filesize("../menu.html"));
-  fclose($menu);
+  <?php
+  $doc = $_SERVER['DOCUMENT_ROOT'];
+  $menu .= $doc . "/menu.php";
+  echo $menu;
+  require $menu;
   ?>
   <h1>Projects</h1>
   <div class="section_title" id="cgi">
