@@ -8,7 +8,7 @@
         position: fixed;
         width: 100%;
         display: inline;
-        z-index: 0;
+        z-index: 15;
     }
 
     .nav_bar_home {
