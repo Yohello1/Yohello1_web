@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
 
     <title>Yohello</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /></head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
 
 <?php
 
@@ -249,8 +250,11 @@ function anime()
         }
 
         .start {
-            padding-bottom: 10px;
-            padding-top: 10px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            background-image: url("images/oldpfp.png");
+            background-size: cover;
+            background-position: 10%;
         }
 
         .left-col,
