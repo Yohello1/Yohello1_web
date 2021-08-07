@@ -386,12 +386,6 @@ function anime()
         }
     </style>
 
-    <?php
-    $doc = $_SERVER['DOCUMENT_ROOT'];
-    $menu .= $doc . "/menu.php";
-        echo $menu;
-    require $menu;
-    ?>
     <div class="start">
         <h1>Yohello</h1>
     </div>
