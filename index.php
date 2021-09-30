@@ -21,6 +21,8 @@ $cgi = $json['for_show'][0]['cgi'];
 $project1 = "Projects/tower.php";
 $project2 = "Need to make";
 
+$images_used = array("None", "None", "None");
+
 function anime()
 {
     $width = rand(240, 2160);
@@ -31,6 +33,18 @@ function anime()
 }
 
 
+
+function pic_fetch()
+{
+    $json_data_projects = file_get_contents("Projects/projects.json");
+    $json_projects = json_decode($json_data_projects, true);
+    // $amount_of_projects = count($json_projects['images']);
+
+    // for ($x = 0; $x < $amount_of_projects; $x++) {
+    //     // rand(0,$amount_of_projects);
+    // }
+    echo $json_projects['images'][1]['image'];
+}
 
 ?>
 
@@ -124,7 +138,7 @@ function anime()
             }
 
             .anime_waifu {
-                object-fit: cover;
+                object-fit: fill;
             }
 
 
@@ -413,94 +427,68 @@ function anime()
 
     </div>
 
-    <br>
-    <br>
-    <br>
-    <!-- Redo this with flexbox -->
-    <!-- <?php echo $json['front_page'][0]['img']; ?> -->
-    <div class="container2">
-        <!-- <a href="<?php echo $project1 ?>"> -->
-        <img src="<?php echo $json['front_page'][0]['img']; ?>" style="width:100%; height:100%">
-        <div class="text-block">
-            <h4><?php echo $json['front_page'][0]['caption']; ?></h4>
-            <p><?php echo $json['front_page'][0]['sub']; ?></p>
+  <!-- Duck this poop let's start -oop -->
+
+        <div class="nextpoint"> </div>
+
+
+
+        <div class="introtext">
+            <h3 class="h31">About Me</h3>
+            <div class="rectangle"></div>
+
+            <?php
+            // Add some proper info here later
+echo 'uhhh what';
+            ?>
         </div>
-        <!-- </a> -->
-    </div>
-    <div class="container3">
-        <img class="anime_waifu" src="<?php anime(); ?>" style="width:100%; height:100%">
-        <div class="text-block">
-            <h4><?php echo $json['front_page'][1]['caption']; ?></h4>
-            <p><?php echo $json['front_page'][1]['sub']; ?></p>
+        <br>
+
+        <div class="Contactinfo">
+            <h3>Contact Information</h3>
+            <div class="rectangle4"></div>
+            <p>Insert Contact information.
+                <br> <br>I will not work for you.<br> This will doubtfully change
+            </p>
         </div>
-    </div>
-    <div class="container4">
-        <img class="anime_waifu" src="<?php anime(); ?>" style="width:100%; height:100%">
-        <div class="text-block">
-            <h4><?php echo $json['front_page'][2]['caption']; ?></h4>
-            <p><?php echo $json['front_page'][2]['sub']; ?></p>
+        <div class="nextpoint"></div>
+
+        <div class="cgivfxtext">
+            <h3>Cgi and Vfx</h3>
+            <div class="rectangle2"></div>
+            <p>I'm always working on some sort of cgi/vfx, this is my latest project involving fire,hardsurface,rigidbody, and so much more. <br> <a href="Projects/Visualfx.html"> To learn more about this project</a> <br> <a href="Projects/index.php">Projects in general</a>
+            </p>
+
         </div>
-    </div>
 
-    <div class="nextpoint"> </div>
-
-
-
-    <div class="introtext">
-        <h3 class="h31">About Me</h3>
-        <div class="rectangle"></div>
-
-        <?php
-        echo "<p> I'm Yohello from <i>the mythical land of Canada</i>, I know a bit about computers, and stuff. As of now I live I'm in the Eastern Time Zone (-4 GMT, -5 UTC), I'm avaliable  $time, I rarly know what is going on in advanced. I'm not taking job requets no matter who you are, I can redirect you to someone who might be able to. Also I know a bit about how computers work but I'm no expert, I learned <b>All</b> of it online, and self taught. I've learned Cgi and Vfx with Blender, I started programing by learning HTML, then diving straight into C# with Unity, and Python then I took a break for about a year and got back into coding with C, and that is how I got here.";
-        ?>
-    </div>
-    <br>
-
-    <div class="Contactinfo">
-        <h3>Contact Information</h3>
-        <div class="rectangle4"></div>
-        <p>Insert Contact information.
-            <br> <br>I will not work for you.<br> This will doubtfully change
-        </p>
-    </div>
-    <div class="nextpoint"></div>
-
-    <div class="cgivfxtext">
-        <h3>Cgi and Vfx</h3>
-        <div class="rectangle2"></div>
-        <p>I'm always working on some sort of cgi/vfx, this is my latest project involving fire,hardsurface,rigidbody, and so much more. <br> <a href="Projects/Visualfx.html"> To learn more about this project</a> <br> <a href="Projects/index.php">Projects in general</a>
-        </p>
-
-    </div>
-
-    <div class="imgvfx">
-        <img src="<?php echo $cgi ?>">
-    </div>
+        <div class="imgvfx">
+            <img src="<?php echo $cgi; ?>">
+        </div>
 
 
 
-    <div class="nextpoint">
+        <div class="nextpoint">
 
-    </div>
-    <br>
-    <div class="cgivfxtext">
-        <h3>Coding</h3>
-        <div class="rectangle3"></div>
-        <p>I'm not always coding, but when I do I do quite a lot of coding. As in I'll make an entire website, app, or game<br> I've used Godot, Unreal, and Unity to Develop games. I use python when doing stuff with api's, and I use C/C++ when doing standalone
-            programs and such usally I'm using C. <br> <a href="https://github.com/Yohello1"> Github, Fraction of what I've done is saved here</a> <br> <a href="Projects/Coding.html">Coding Page</a> <br> <a href="Projects/Projecthomepage.html">All Projects</a>
-        </p>
-    </div>
-    <div class="imgvfx">
-        <img src="<?php echo $code ?>">
-    </div>
-    <div class="nextpoint">
+        </div>
+        <br>
+        <div class="cgivfxtext">
+            <h3>Coding</h3>
+            <div class="rectangle3"></div>
+            <p>I'm not always coding, but when I do I do quite a lot of coding. As in I'll make an entire website, app, or game<br> I've used Godot, Unreal, and Unity to Develop games. I use python when doing stuff with api's, and I use C/C++ when doing standalone
+                programs and such usally I'm using C. <br> <a href="https://github.com/Yohello1"> Github, Fraction of what I've done is saved here</a> <br> <a href="Projects/Coding.html">Coding Page</a> <br> <a href="Projects/Projecthomepage.html">All Projects</a>
+            </p>
+        </div>
+        <div class="imgvfx">
+            <img src="<?php echo $code ?>">
+        </div>
+        <div class="nextpoint">
 
-    </div>
-    <br>
+        </div>
+        <br>
 
-    <div class="nextpoint"></div>
-    <br>
-    <br>
-    <br>
+        <div class="nextpoint"></div>
+        <br>
+        <br>
+        <br>
 
 </body>
