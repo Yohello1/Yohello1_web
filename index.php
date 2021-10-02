@@ -402,6 +402,27 @@ function pic_fetch()
             z-index: -1;
 
         }
+
+        .flex_box {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            align-content: flex-start
+        }
+
+        .flex_boxxy {
+            background: tomato;
+            padding: 5px;
+            width: 200px;
+            height: 150px;
+            margin-top: 10px;
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+        }
     </style>
 
     <div class="start">
@@ -427,68 +448,79 @@ function pic_fetch()
 
     </div>
 
-  <!-- Duck this poop let's start -oop -->
-
-        <div class="nextpoint"> </div>
+    <!-- Duck this poop let's start -oop -->
 
 
-
-        <div class="introtext">
-            <h3 class="h31">About Me</h3>
-            <div class="rectangle"></div>
-
-            <?php
-            // Add some proper info here later
-echo 'uhhh what';
-            ?>
-        </div>
-        <br>
-
-        <div class="Contactinfo">
-            <h3>Contact Information</h3>
-            <div class="rectangle4"></div>
-            <p>Insert Contact information.
-                <br> <br>I will not work for you.<br> This will doubtfully change
-            </p>
-        </div>
-        <div class="nextpoint"></div>
-
-        <div class="cgivfxtext">
-            <h3>Cgi and Vfx</h3>
-            <div class="rectangle2"></div>
-            <p>I'm always working on some sort of cgi/vfx, this is my latest project involving fire,hardsurface,rigidbody, and so much more. <br> <a href="Projects/Visualfx.html"> To learn more about this project</a> <br> <a href="Projects/index.php">Projects in general</a>
-            </p>
-
-        </div>
-
-        <div class="imgvfx">
-            <img src="<?php echo $cgi; ?>">
-        </div>
+    <ul class="flex_box">
+  <li class="flex_boxxy">1</li>
+  <li class="flex_boxxy">2</li>
+  <li class="flex_boxxy">3</li>
+  <li class="flex_boxxy">4</li>
+  <li class="flex_boxxy">5</li>
+  <li class="flex_boxxy">6</li>
+</ul>
 
 
 
-        <div class="nextpoint">
 
-        </div>
-        <br>
-        <div class="cgivfxtext">
-            <h3>Coding</h3>
-            <div class="rectangle3"></div>
-            <p>I'm not always coding, but when I do I do quite a lot of coding. As in I'll make an entire website, app, or game<br> I've used Godot, Unreal, and Unity to Develop games. I use python when doing stuff with api's, and I use C/C++ when doing standalone
-                programs and such usally I'm using C. <br> <a href="https://github.com/Yohello1"> Github, Fraction of what I've done is saved here</a> <br> <a href="Projects/Coding.html">Coding Page</a> <br> <a href="Projects/Projecthomepage.html">All Projects</a>
-            </p>
-        </div>
-        <div class="imgvfx">
-            <img src="<?php echo $code ?>">
-        </div>
-        <div class="nextpoint">
+    <!-- Part 2 -->
+    <div class="nextpoint"> </div>
+    <div class="introtext">
+        <h3 class="h31">About Me</h3>
+        <div class="rectangle"></div>
 
-        </div>
-        <br>
+        <?php
+        // Add some proper info here later
+        echo 'uhhh what';
+        ?>
+    </div>
+    <br>
 
-        <div class="nextpoint"></div>
-        <br>
-        <br>
-        <br>
+    <div class="Contactinfo">
+        <h3>Contact Information</h3>
+        <div class="rectangle4"></div>
+        <p>Insert Contact information.
+            <br> <br>I will not work for you.<br> This will doubtfully change
+        </p>
+    </div>
+    <div class="nextpoint"></div>
+
+    <div class="cgivfxtext">
+        <h3>Cgi and Vfx</h3>
+        <div class="rectangle2"></div>
+        <p>I'm always working on some sort of cgi/vfx, this is my latest project involving fire,hardsurface,rigidbody, and so much more. <br> <a href="Projects/Visualfx.html"> To learn more about this project</a> <br> <a href="Projects/index.php">Projects in general</a>
+        </p>
+
+    </div>
+
+    <div class="imgvfx">
+        <img src="<?php echo $cgi; ?>">
+    </div>
+
+
+
+    <div class="nextpoint">
+
+    </div>
+    <br>
+    <div class="cgivfxtext">
+        <h3>Coding</h3>
+        <div class="rectangle3"></div>
+        <p>I'm not always coding, but when I do I do quite a lot of coding. As in I'll make an entire website, app, or game<br> I've used Godot, Unreal, and Unity to Develop games. I use python when doing stuff with api's, and I use C/C++ when doing standalone
+            programs and such usally I'm using C. <br> <a href="https://github.com/Yohello1"> Github, Fraction of what I've done is saved here</a> <br> <a href="Projects/Coding.html">Coding Page</a> <br> <a href="Projects/Projecthomepage.html">All Projects</a>
+        </p>
+    </div>
+    <div class="imgvfx">
+        <img src="<?php echo $code ?>">
+    </div>
+    <div class="nextpoint">
+
+    </div>
+    <br>
+
+    <div class="nextpoint"></div>
+    <br>
+    <br>
+    <br>
 
 </body>
