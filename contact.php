@@ -27,7 +27,7 @@
     </div>
     <div class="other_forms">
         <h2>Other ways to<br>Contact me</h2>
-        <h3>Discord: to be added</h3>
+        <h3>Discord: YOHWLLO#9962</h3>
         <h3>Phone number: To be added</h3>
     </div>
 </body>

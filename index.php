@@ -452,13 +452,13 @@ function pic_fetch()
 
 
     <ul class="flex_box">
-  <li class="flex_boxxy">1</li>
-  <li class="flex_boxxy">2</li>
-  <li class="flex_boxxy">3</li>
-  <li class="flex_boxxy">4</li>
-  <li class="flex_boxxy">5</li>
-  <li class="flex_boxxy">6</li>
-</ul>
+        <li class="flexiable_jeans_are_nice">1</li>
+        <li class="flexiable_jeans_are_nice">2</li>
+        <li class="flexiable_jeans_are_nice">3</li>
+        <li class="flexiable_jeans_are_nice">4</li>
+        <li class="flexiable_jeans_are_nice">5</li>
+        <li class="flexiable_jeans_are_nice">6</li>
+    </ul>
 
 
 
