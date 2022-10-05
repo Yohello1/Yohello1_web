@@ -511,7 +511,7 @@ function pic_fetch()
         </p>
     </div>
     <div class="imgvfx">
-        <img src="<?php echo $code ?>">
+        <img src="<?php echo anime() ?>">
     </div>
     <div class="nextpoint">
 
