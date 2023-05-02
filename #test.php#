@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-
-    <head>
+<head>
 
     <meta charset="UTF-8">
 
@@ -13,12 +11,12 @@
         background-color: #161616;
     }
 
-    .banner_bloc {
-        display: inline-block;
+    .banner_bloc
+    {
+        display:inline-block;
         height: 112px;
         width: 770px;
     }
-
     .wrapper {
         margin: 0 auto;
         width: 770px;
@@ -91,62 +89,17 @@
         line-height: 0%;
         position: relative;
         top: -114px;
-        left: 660px;
+        /* left: 10px; */
+        margin-left: 660;
     }
 
-    .contact_info_banner {
-        color: #FFFFFF;
-        position: relative;
-        top: -150px;
-        width: 740px;
-        text-align: center;
-    }
-
-    .left_side {
-        width: 49%;
-        float: left; 
-    }
-
-    .left_banner_bloc {
-        display: inline-block;
-        height: 400px;
-        width: 100%;
-    }
-
-    .left_header_one {
-        background-color: #888;
-        position: relative;
-        width: 95%;
-        height: 400px;
-        top: 10px;
-        left:10px;
-
-        /* left: 50%; */
-        float:left;
-        transform: translate(0, 0);
-        /* maring: 10px; */
-    }
-
-
-    .right_side {
-        width: 49%;
-        float: right; 
-    }
-
-    .right_header_one
+    .contact_info_banner
     {
-
-        background-color: #130;
+        color:#FFFFFF;
         position: relative;
-        width: 95%;
-        height: 400px;
-        top: 10px;
-        left:-0px;
-        /* left: 50%; */
-        float:right;
-        transform: translate(0, 0);
-        /* border: 10px; */
-    
+        top:-150px;
+        width:740px;
+        text-align: center;
     }
 </style>
 
@@ -166,31 +119,13 @@
                 <h2 class="left_bot_title">
                     I got bored
                 </h2>
-                <img class="pfp_icon" src="Images/pfp.webp">
+                <img class="pfp_icon" src="https://cdn.discordapp.com/avatars/566227391106646026/2a166fd47c35f5b7b96139be46f53376.webp">
 
                 <h4 class="contact_info_banner">Home | Projects | YOHWLLO#9962 | mp2702737@gmail.com </h4>
 
             </div>
         </div>
-
-
-
-        <div class="left_side">
-            <div class="left_header_one">
-            <h3> Hello guys </h3>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="right_side">
-        <div class="right_header_one">
-            <h3> Hello guys </h3>
-            </div>
-        </div>
-        </div>
+        <h3> Hello guys </h3>
 
     </div>
 </body>
