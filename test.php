@@ -107,25 +107,6 @@
         float: left; 
     }
 
-    .left_banner_bloc {
-        display: inline-block;
-        height: 400px;
-        width: 100%;
-    }
-
-    .left_header_one {
-        background-color: #888;
-        position: relative;
-        width: 95%;
-        height: 400px;
-        top: 10px;
-        left:10px;
-
-        /* left: 50%; */
-        float:left;
-        transform: translate(0, 0);
-        /* maring: 10px; */
-    }
 
 
     .right_side {
@@ -146,7 +127,52 @@
         float:right;
         transform: translate(0, 0);
         /* border: 10px; */
-    
+
+    }
+
+    .left_header_one {
+        background-color: #FFFFFF;
+        position: relative;
+        width: 95%;
+        height: 300px;
+        top: 0px;
+        left: 50%;
+        float:left;
+        transform: translate(-50%, 0);
+        margin-right: 10px;
+    }
+
+    .left_header_two {
+        background-color: #A2A2A2;
+        position: relative;
+        width: 95%;
+        height: 300px;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-left: 10px;
+    }
+
+    .left_inside {
+        background-color: #880088;
+        position:relative;
+        width:350px;
+        height:290px;
+        top:10px;
+        margin-left: 18px;
+        transform: translate(0, -318px);
+    }
+
+    .left_pfp_icon {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: blue;
+        line-height: 0%;
+        position: relative;
+        top: -0px;
+        left: 0px;
     }
 </style>
 
@@ -168,7 +194,7 @@
                 </h2>
                 <img class="pfp_icon" src="Images/pfp.webp">
 
-                <h4 class="contact_info_banner">Home | Projects | YOHWLLO#9962 | mp2702737@gmail.com </h4>
+                <h4 class="contact_info_banner">Home | Projects | yohwllo | mp2702737@gmail.com </h4>
 
             </div>
         </div>
@@ -176,8 +202,11 @@
 
 
         <div class="left_side">
-            <div class="left_header_one">
-            <h3> Hello guys </h3>
+            <div class="left_header_one"></div>
+            <div class="left_header_two"></div>
+            <div class="left_inside">
+                <!-- <img class="left_pfp_icon" src="Images/pfp.webp"> -->
+                <h3> Hello guys </h3>
             </div>
         </div>
 
