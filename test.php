@@ -17,6 +17,8 @@
         display: inline-block;
         height: 112px;
         width: 770px;
+        position:relative;
+        z-index: 1;
     }
 
     .wrapper {
@@ -174,6 +176,44 @@
         top: -0px;
         left: 0px;
     }
+
+/* Blog Code */
+
+    .left_header_three {
+        background-color: #FFFFFF;
+        position: relative;
+        width: 95%;
+        height: 300px;
+        top: 0px;
+        left: 50%;
+        float:left;
+        transform: translate(-50%, -275px);
+        margin-right: 10px;
+    }
+
+    .left_header_four {
+        background-color: #A2A2A2;
+        position: relative;
+        width: 95%;
+        height: 300px;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, -275px);
+        margin-left: 10px;
+    }
+
+    .left_blog {
+        background-color: #880088;
+        position:relative;
+        width:350px;
+        height:290px;
+        top:10px;
+        margin-left: 18px;
+        transform: translate(0, -593px);
+    }
+
+
+
 </style>
 
 <body>
@@ -201,14 +241,22 @@
 
 
 
-        <div class="left_side">
-            <div class="left_header_one"></div>
-            <div class="left_header_two"></div>
-            <div class="left_inside">
-                <!-- <img class="left_pfp_icon" src="Images/pfp.webp"> -->
-                <h3> Hello guys </h3>
-            </div>
+     <div class="left_side">
+        <div class="left_header_one"></div>
+        <div class="left_header_two"></div>
+        <div class="left_inside">
+            <h3></h3>
+            <img class="left_pfp_icon" src="Images/pfp.webp">
         </div>
+
+
+        <div class="left_header_three"></div>
+        <div class="left_header_four"></div>
+        <div class="left_blog">
+            <h3></h3>
+            <img class="left_pfp_icon" src="Images/pfp.webp">
+        </div>
+     </div>
 
 
 
