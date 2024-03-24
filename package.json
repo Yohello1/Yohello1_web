@@ -1,26 +1,17 @@
 {
-  "name": "yohello1_web",
-  "version": "1.0.0",
-  "description": "Yohwllo website",
-  "main": "index.js",
+  "name": "yohello1-web",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Yohello1/Yohello1_web.git"
-  },
-  "keywords": [
-    "yohello",
-    "website"
-  ],
-  "author": "Yohwllo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Yohello1/Yohello1_web/issues"
-  },
-  "homepage": "https://github.com/Yohello1/Yohello1_web#readme",
   "dependencies": {
-    "express": "^4.19.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
   }
 }
