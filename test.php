@@ -116,21 +116,6 @@
         float: right; 
     }
 
-    .right_header_one
-    {
-
-        background-color: #130;
-        position: relative;
-        width: 95%;
-        height: 400px;
-        top: 10px;
-        left:-0px;
-        /* left: 50%; */
-        float:right;
-        transform: translate(0, 0);
-        /* border: 10px; */
-
-    }
 
     .left_header_one {
         background-color: #FFFFFF;
@@ -183,11 +168,11 @@
         background-color: #FFFFFF;
         position: relative;
         width: 95%;
-        height: 300px;
+        height: 150px;
         top: 0px;
         left: 50%;
         float:left;
-        transform: translate(-50%, -275px);
+        transform: translate(-50%, -280px);
         margin-right: 10px;
     }
 
@@ -195,10 +180,10 @@
         background-color: #A2A2A2;
         position: relative;
         width: 95%;
-        height: 300px;
+        height: 150px;
         top: 10px;
         left: 50%;
-        transform: translate(-50%, -275px);
+        transform: translate(-50%, -280px);
         margin-left: 10px;
     }
 
@@ -206,14 +191,115 @@
         background-color: #880088;
         position:relative;
         width:350px;
-        height:290px;
+        height:140px;
         top:10px;
         margin-left: 18px;
-        transform: translate(0, -593px);
+        transform: translate(0, -450px);
     }
 
+/* Pictures css code */
+    .left_header_five {
+        background-color: #FFFFFF;
+        position: relative;
+        width: 95%;
+        height: 500px;
+        top: 0px;
+        left: 50%;
+        float:left;
+        transform: translate(-50%, -410px);
+        margin-right: 10px;
+    }
 
+    .left_header_six {
+        background-color: #A2A2A2;
+        position: relative;
+        width: 95%;
+        height: 500px;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, -410px);
+        margin-left: 10px;
+    }
 
+    .left_pictures {
+        background-color: #880088;
+        position:relative;
+        width:350px;
+        height:490px;
+        top:10px;
+        margin-left: 18px;
+        transform: translate(0, -930px);
+    }
+
+/*Projects tab*/
+    .right_header_one
+    {
+        background-color: #FFFFFF;
+        position: relative;
+        width: 95%;
+        height: 500px;
+        top: 0px;
+        right: 50%;
+        float: right;
+        transform: translate(+50%, 0px);
+    }
+
+    .right_header_two
+    {
+        background-color: #A2A2A2;
+        position: relative;
+        width: 95%;
+        height: 500px;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        margin-left: 10px;
+    }
+
+    .right_projects {
+        background-color: #880088;
+        position:relative;
+        width:350px;
+        height:490px;
+        top:10px;
+        margin-left: 18px;
+        transform: translate(0, -519px);
+    }
+
+/* updates and changes */
+    .right_header_three
+    {
+        background-color: #FFFFFF;
+        position: relative;
+        width: 95%;
+        height: 500px;
+        top: 0px;
+        right: 50%;
+        float: right;
+        transform: translate(+50%, -485px);
+    }
+
+    .right_header_four
+    {
+        background-color: #A2A2A2;
+        position: relative;
+        width: 95%;
+        height: 500px;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, -485px);
+        margin-left: 10px;
+    }
+
+    .right_update{
+        background-color: #880088;
+        position:relative;
+        width:350px;
+        height:490px;
+        top:10px;
+        margin-left: 18px;
+        transform: translate(0, -1003px);
+    }
 </style>
 
 <body>
@@ -245,7 +331,7 @@
         <div class="left_header_one"></div>
         <div class="left_header_two"></div>
         <div class="left_inside">
-            <h3></h3>
+            <h3>Profile</h3>
             <img class="left_pfp_icon" src="Images/pfp.webp">
         </div>
 
@@ -253,9 +339,16 @@
         <div class="left_header_three"></div>
         <div class="left_header_four"></div>
         <div class="left_blog">
-            <h3></h3>
+            <h3>Blog updates</h3>
             <img class="left_pfp_icon" src="Images/pfp.webp">
         </div>
+
+        <div class="left_header_five"></div>
+        <div class="left_header_six"></div>
+        <div class="left_pictures">
+            <h3>Pictures</h3>
+        </div>
+
      </div>
 
 
@@ -263,11 +356,17 @@
 
 
         <div class="right_side">
-        <div class="right_header_one">
-            <h3> Hello guys </h3>
+            <div class="right_header_one"></div>
+            <div class="right_header_two"></div>
+            <div class ="right_projects">
+                <h3>Projects</h3>
+            </div>
+
+            <div class="right_header_three"></div>
+            <div class="right_header_four"></div>
+            <div class ="right_update">
+                <h3>Github Updates</h3>
             </div>
         </div>
-        </div>
-
-    </div>
+     </div>
 </body>
