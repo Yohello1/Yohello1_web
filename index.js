@@ -37,10 +37,56 @@ app.get('/blog', (req,res) => {
     res.render("blog", {bannerCode: bannerCode, bannerCSS: bannerCSS});
 })
 
+app.get('/projects', (req, res) =>{
+    var bannerCode = "";
+    var bannerCSS = "";
+    try{
+        bannerCode = fs.readFileSync('internal/banner.html', 'utf8');
+    }
+    catch(err)
+    {
+        console.log(err);
+    }
+
+    try{
+        bannerCSS = fs.readFileSync('internal/banner.css', 'utf8');
+    }
+    catch(err)
+    {
+        console.log(err);
+    }
+
+    res.render("projects", {bannerCode: bannerCode, bannerCSS: bannerCSS});
+})
+
+
+app.get('/blogEdit', (req, res) =>{
+    var bannerCode = "";
+    var bannerCSS = "";
+    try{
+        bannerCode = fs.readFileSync('internal/banner.html', 'utf8');
+    }
+    catch(err)
+    {
+        console.log(err);
+    }
+
+    try{
+        bannerCSS = fs.readFileSync('internal/banner.css', 'utf8');
+    }
+    catch(err)
+    {
+        console.log(err);
+    }
+
+    res.render("blogEdit",  {bannerCode: bannerCode, bannerCSS: bannerCSS});
+})
+
+app.post('/blogPost', (req, res) => {
+    console.log(res);
+})
+
 
 app.listen(port, () => {
-
-
-
   console.log(`Example app listening on port ${port}`)
 })

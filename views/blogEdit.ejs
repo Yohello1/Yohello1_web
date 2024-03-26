@@ -1,0 +1,51 @@
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Yohwllo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<style>
+    body {
+        background-color: #161616;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        width: 770px;
+    }
+
+    h1{
+    color:#EEE;
+    }
+
+    h3{
+    color:#EEE;
+    }
+
+    <%= locals.bannerCSS %>
+</style>
+
+<body>
+    <div class="wrapper">
+        <%- locals.bannerCode %>
+        <h1> My Blog Edit</h1>
+        <h3> Add a post to my Blog, you cant really edit anything yet- </h3>
+        <br>
+        <form>
+            <label for="title" style="color:white"> Title </label><br>
+            <input type="text" id="title" name="title"> <br>
+
+            <label for"codee" style="color:white"> codee </tabel> <br>
+            <input type="text" id="codee" name="codee">
+            <br>
+        </form>
+
+        <label for="textt" style="color:white"> text </label><br>
+        <textarea id="textt" name="textt" rows="50" cols="80">
+        Here's your input, write ur blog in html LMAO
+        </textarea>
+
+    </div>
+</body>
