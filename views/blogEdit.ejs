@@ -27,6 +27,34 @@
     <%= locals.bannerCSS %>
 </style>
 
+<script>
+ console.log("RUN");
+if (document.readyState !== 'loading') {
+    console.log('document is already ready, just execute code here');
+    myInitCode();
+} else {
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log('document was not ready, place code here');
+        myInitCode();
+    });
+ }
+
+ function myInitCode()
+ {
+     document.addEventListener("subb", submitFunction);
+     console.log("HAI");
+
+     function submitFunction()
+     {
+        console.log("HELLO");
+        var title = document.getElementByID("title").value;
+        var codee = document.getElementByID("codee").value;
+        var textt = document.getElementByID("textt").value;
+        console.log(textt);
+    }
+}
+</script>
+
 <body>
     <div class="wrapper">
         <%- locals.bannerCode %>
@@ -46,6 +74,9 @@
         <textarea id="textt" name="textt" rows="50" cols="80">
         Here's your input, write ur blog in html LMAO
         </textarea>
+
+        <br>
+        <button type="button" id="subb">Submit</button>
 
     </div>
 </body>

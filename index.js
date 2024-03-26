@@ -1,11 +1,14 @@
 const express = require('express')
 const fs = require('node:fs');
-const app = express()
-const port = 8080
+const CryptoJS = require("crypto-js");
+const app = express();
+const port = 8080;
 
 
 // Static files
 app.use(express.static('public'));
+app.use(express.urlencoded());
+app.use(express.json());
 app.set('view engine', 'ejs');
 
 
@@ -83,7 +86,15 @@ app.get('/blogEdit', (req, res) =>{
 })
 
 app.post('/blogPost', (req, res) => {
-    console.log(res);
+    var textt = req['body']['text'];
+    var title = req['body']['title'];
+
+    console.log(textt);
+
+    var decrypted = CryptoJS.AES.decrypt(textt, "ELjiJ5/njYSYYKJI1GSYY6mV7bhhQdgwGwXj7TCQSATsRsjHQMYPVY/+hG1tWV0f");
+    var finalText = decrypted.toString(CryptoJS.enc.Utf8);
+    console.log(finalText);
+
 })
 
 

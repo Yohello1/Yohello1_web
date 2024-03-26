@@ -1,0 +1,125 @@
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Yohwllo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<style>
+    body {
+        background-color: #161616;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        width: 770px;
+    }
+
+    h1{
+    color:#EEE;
+    }
+
+    h3{
+    color:#EEE;
+    }
+</style>
+
+<script>
+ console.log("RUN");
+
+  
+if (document.readyState !== 'loading') {
+    console.log('document is already ready, just execute code here');
+    myInitCode();
+} else {
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log('document was not ready, place code here');
+        setTimeout(myInitCode, 1000);
+        
+    });
+ }
+
+ function myInitCode()
+ {
+     console.log("HAI");
+     
+     document.getElementById('subb').onclick = function()
+     {
+         console.log("HELLO");
+         var titlee = document.getElementById("title").value;
+         var codee = document.getElementById("codee").value;
+         var textt = document.getElementById("textt").value;
+         console.log(textt);
+
+         if (typeof titlee === "string" && titlee.length === 0) {
+             alert("TITLE");
+             return;
+         } else if (titlee === null) {
+             alert("title");
+             return;
+         }
+
+         if (typeof codee === "string" && codee.length === 0) {
+             alert("codee");
+             return;
+         } else if (codee === null) {
+             alert("codee");
+             return;
+         }
+
+         if (typeof textt === "string" && textt.length === 0) {
+             alert("text");
+             return;
+         } else if (textt === null) {
+             alert("textt");
+             return;
+        }
+        
+        // Encrypt
+         var ciphertext = CryptoJS.AES.encrypt(textt, codee);
+
+        var xhr = new XMLHttpRequest(); 
+        xhr.open("POST", '/blogPost', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({
+        title: titlee,
+            text: ciphertext.toString()
+        }));
+
+         // Decrypt
+         var bytes = CryptoJS.AES.decrypt(ciphertext.toString(), codee);
+         var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+        console.log(ciphertext.toString());
+     };
+
+
+}
+</script>
+
+<body>
+    <div class="wrapper">
+        <h1> My Blog Edit</h1>
+        <h3> Add a post to my Blog, you cant really edit anything yet-, ALSO UR NOT SUPPOSED TO BE HERE </h3>
+        <br>
+        <form>
+            <label for="title" style="color:white"> Title </label><br>
+            <input type="text" id="title" name="title"> <br>
+
+            <label for"codee" style="color:white"> codee </tabel> <br>
+            <input type="text" id="codee" name="codee">
+            <br>
+        </form>
+
+        <label for="textt" style="color:white"> text </label><br>
+        <textarea id="textt" name="textt" rows="50" cols="80">
+        Here's your input, write ur blog in html LMAO
+        </textarea>
+
+        <br>
+        <button type="button" id="subb">Submit</button>
+
+    </div>
+</body>
