@@ -2,7 +2,7 @@ const express = require('express')
 const fs = require('node:fs');
 const CryptoJS = require("crypto-js");
 const app = express();
-const port = 80;
+const port = process.env.PORT || 8080;
 
 
 // Static files
