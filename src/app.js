@@ -7,9 +7,11 @@ const port = process.env.PORT || 8080;
 
 // Static files
 app.use(express.static('public'));
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.set('view engine', 'ejs');
+app.set('port', port);
+module.exports = app;
 
 
 // Pages & Requests
