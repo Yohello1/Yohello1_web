@@ -1,0 +1,19 @@
+my experience writting the ecs system
+
+map vs unordered vs unrodered_dense
+
+type_info
+
+lvalue v rvalue
+
+<h1> My Expereince Writting an ECS system</h1>
+Writting an ECS system was hard and confusing.
+
+<h3> Variants </h3>
+At first I was going to use std::variants, and use that to hold the objects. In fact I went all the way through, and implemented them. But then I relised, that, I cannot change the values in a variant without entirely remaking the object. Now, this ecs system doesn't need to be fast. My needs just need fast read/write. But this was gonna be too slow. So I threw it out.
+
+<h3> Raw pointers </h3>
+Im writting this in c++, so no.
+
+<h3> unique_ptrs </h3>
+Why did I make this unique? Idk. I wanted everyone to have access to just one pointer, so I dont accidently leave something allocated uk. In the end this is what I went with. The method I used for loading data is something to be studied, and I'll probs discuss it late LMAO.
