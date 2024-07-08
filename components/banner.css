@@ -1,4 +1,5 @@
-    .banner_bloc {
+<style>
+      .banner_bloc {
         display: inline-block;
         height: 112px;
         width: 770px;
@@ -82,3 +83,64 @@
         width: 740px;
         text-align: center;
     }
+
+
+    .left_side {
+        width: 49%;
+        float: left;
+    }
+
+
+
+    .right_side {
+        width: 49%;
+        float: right;
+    }
+
+
+    .left_header_one {
+        background-color: #FFFFFF;
+        position: relative;
+        width: 95%;
+        height: 300px;
+        top: 0px;
+        left: 50%;
+        float:left;
+        transform: translate(-50%, 0);
+        margin-right: 10px;
+    }
+
+    .left_header_two {
+        background-color: #A2A2A2;
+        position: relative;
+        width: 95%;
+        height: 300px;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-left: 10px;
+    }
+
+    .left_inside {
+
+        position:relative;
+        width:350px;
+        height:290px;
+        top:10px;
+        margin-left: 18px;
+        transform: translate(0, -318px);
+    }
+
+    .left_pfp_icon {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: blue;
+        line-height: 0%;
+        position: relative;
+        top: -0px;
+        left: 0px;
+    }
+
+</style>
