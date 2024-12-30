@@ -18,20 +18,34 @@
 
 
 <body>
-    <!-- <p> Hello there </p> -->
     <div class="wrapper">
 
       <div class="banner_bloc">
-        <object width="770px" height="130px" position="fixed" type="text/html" data="banner.html"></object>
-      </div>
+        <div class="header_one"></div>
+        <div class="header_two"></div>
+        <div class="header_three">
+          <h1 class="text_title">
+            My Waste Of Space
+          </h1>
+          <h2 class="left_top_title">
+            Yohwllo.ca
+          </h2>
+          <h2 class="left_bot_title">
+            I got bored
+          </h2>
+          <img class="pfp_icon" src="../images/pfp.webp">
 
-      my experience writting the ecs system
+          <h4 class="contact_info_banner"><a href="/index.html">Home</a> | yohwllo | mp2702737@gmail.com </h4>
+        </div>
 
-      map vs unordered vs unrodered_dense
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-      type_info
 
-      lvalue v rvalue
 
       <h1> My Expereince Writting an ECS system</h1>
       Writting an ECS system was hard and confusing.
@@ -45,6 +59,18 @@
       <h3> unique_ptrs </h3>
       Why did I make this unique? Idk. I wanted everyone to have access to just one pointer, so I dont accidently leave something allocated uk. In the end this is what I went with. The method I used for loading data is something to be studied, and I'll probs discuss it late LMAO.
 
+      <h3>Maps</h3>
+      So in the end my ecs system ended up just being a map with some extra functions (very useful functions). Really all the heavy lifting is done by a map lmao. I need to actually change its key to smth better, as a string aint that great lmaoo. <br>
+      Anywaysss, there are like 3 types of maps fof the top of my head. Ordered map(default in c++), unordered, and unordered_dense. You can read into the semantics of each one yourself,, its not worth the space here whilst other people have written so much more, and better stuff. <br>
+      If you need to choose between these three, ask yourself these questions; how many elements will be there, how much memory, speed use. <br>
+      Map uses a lot less memory than both unordered_map, and unordered_dense(generally since there isnt anything in the c++ standard yet), this is espectially true at low elements amounts. <br>
+      From there I just ask myself do I actually need the speed benifits, and will they be visible. <br>
+      Unless Im doing like over 1k entities, I dont bother using anything other than map.
 
+      <h3>Type_info/type_index</h3>
+      Type_info returns like a hash on the type of class or wtvvv, I realllyyy like it. BUt make sure to know when to use type_index instead. As type_info returns a ptr which in a lot of situations is NOT what you want, whilst type_index returns data or smth. Basically,, use type_index when possible, I think, there are a lot of nuances. <br>
+      Reminds me that I should learn about decltype.
 
+      <h3>lvalues, and rvalues</h3>
+      At some point search them up, they kinda just make sense.
 </body>
