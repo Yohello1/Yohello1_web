@@ -1,0 +1,14 @@
+<h1> SSH Tricks </h1>
+
+<h2>Proxy</h2>
+
+Recently I learned that we could ssh proxy, previously I was using tailscale and a vps on cloud.csclub.uwaterloo.ca
+But then Leo,  told me that I could just use `ssh -D`, which basically sets it up like a proxy server. You can search up the documentation
+
+<h1> Git tricks </h1>
+
+<h2> Depth </h2>
+If you just need to build smth from souce, and need the code, and are ok with a shallow clone. Adding `--depth 1` can help quite a bit. Since it just tells git to get a shallow history, not EVERYTHING
+
+<h2> git add * </h2>
+Adds everything, except for things with a `.` infront of it... mostlyyy
