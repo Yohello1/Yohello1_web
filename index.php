@@ -210,6 +210,172 @@
         padding-bottom: 0px;
     }
 
+
+/* Stars */
+
+@keyframes animateBg {
+    0%,100%
+    {
+        transform:scale(1);
+    }
+    50%
+    {
+        transform:scale(1.2);
+    }
+}
+
+.star{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
+    animation:  animate 3s linear infinite;
+}
+.star::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+@keyframes animate {
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+        opacity: 0;
+    }
+    10%
+    {
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-1500px);
+        opacity: 1;
+
+    }
+
+}
+
+
+.star:nth-child(1){
+    top: 100px;
+    right: 0px;
+    left:initial;
+    animation-delay:0 ;
+    animation-duration: 1s;
+}
+
+.star:nth-child(2){
+    top: 150px;
+    right: 0px;
+    left:initial;
+    animation-delay:0.2s;
+    animation-duration: 3s;
+}
+
+.star:nth-child(3){
+    top: 175px;
+    right: 0px;
+    left:initial;
+    animation-delay:0.4s ;
+    animation-duration: 2s;
+}
+
+.star:nth-child(4){
+    top: 2500px;
+    right: 0px;
+    left:initial;
+    animation-delay:0.6s;
+    animation-duration: 1.5s;
+}
+
+.star:nth-child(5){
+    top: 300px;
+    right: 0px;
+    left:initial;
+    animation-delay:0.8s;
+    animation-duration: 2.5s;
+}
+
+.star:nth-child(6){
+    top: 350px;
+    right: 0px;
+    left:initial;
+    animation-delay:1s ;
+    animation-duration: 3s;
+}
+.star:nth-child(7 ){
+    top: 475px;
+    right: 0px;
+    left:initial;
+    animation-delay:1s ;
+    animation-duration: 1.75s;
+}
+
+.star:nth-child(8){
+    top: 525px;
+    right: 0px;
+    left:initial;
+    animation-delay:1.4s ;
+    animation-duration: 1.25s;
+}
+
+.star:nth-child(9){
+    top: 0px;
+    right: 600px;
+    left:initial;
+    animation-delay:0.75s ;
+    animation-duration: 2.25s;
+}
+
+.star:nth-child(10){
+    top: 800px;
+    right: 0px;
+    left:initial;
+    animation-delay:2.75s ;
+    animation-duration: 2.25s;
+}
+
+.star:nth-child(11){
+    top: 0px;
+    right: 200px;
+    left:initial;
+    animation-delay:2.35s ;
+    animation-duration: 2.25s;
+}
+
+.star:nth-child(12){
+    top: 0px;
+    right: 300px;
+    left:initial;
+    animation-delay:2.15s ;
+    animation-duration: 2.25s;
+}
+
+
+.star:nth-child(13){
+    top: 0px;
+    right: 125px;
+    left:initial;
+    animation-delay:1.85s ;
+    animation-duration: 2.25s;
+}
+
+
+
+
 </style>
 
 <body style="background-image:url('images/background.png'); font-family: Hack, monospace">
@@ -259,9 +425,25 @@ I'm also a student at the University of Waterloo, I was the prez of the cs club 
         <div class="left_header_four"></div>
         <div class="left_blog">
             <h3>Blog updates</h3>
-            <a href="myPosts/files.html"> Files are complicated </a><br>
-            <a href="myPosts/ecs.html"> ECS Journies </a><br>
-            <a href="myPosts/code.html"> random title </a><br>
+
+<?php
+$directory = './myPosts/'; // Change this to your target directory
+
+$files = scandir($directory);
+foreach ($files as $file) {
+    // Skip current and parent directory entries
+    if ($file === '.' || $file === '..') continue;
+
+    // Full path
+    $path = $directory . $file;
+
+    // Only link to files (not directories)
+    if (is_file($path)) {
+        echo '<a href="' . htmlspecialchars($path) . '">' . htmlspecialchars($file) . '</a><br>';
+    }
+}
+?>
+
 
         </div>
 
@@ -322,4 +504,20 @@ I'm also a student at the University of Waterloo, I was the prez of the cs club 
             </div>
         </div>
      </div>
+
+
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
+
 </body>
