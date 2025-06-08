@@ -17,3 +17,9 @@ Adds everything, except for things with a `.` infront of it... mostlyyy
 <h1> sudo </h1>
 <h2> When you get screwed </h2>
 If you fuck up your dns, and network enough, sudo stops working
+
+<h1>Compiling for embedded</h1>
+<h2>unknown-elf (or none-elf) vs linux-gnu </h2>
+If you know what these mean, yous hould know what what I'm about to say. <br>
+
+So you should genreally try to use linux-gnu, not because it links against linux, but because it specifies the calling convention. The unknown/none-elf compiler stuff dont specify what the calling convention is, which makes it impossible to write programs that work with eachtoher.

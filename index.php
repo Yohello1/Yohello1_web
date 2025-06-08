@@ -358,7 +358,7 @@
 
 .star:nth-child(12){
     top: 0px;
-    right: 300px;
+    right: 500px;
     left:initial;
     animation-delay:2.15s ;
     animation-duration: 2.25s;
@@ -373,6 +373,37 @@
     animation-duration: 2.25s;
 }
 
+.star:nth-child(14){
+    top: 0px;
+    right: 355px;
+    left:initial;
+    animation-delay:1.35s ;
+    animation-duration: 2.15s;
+}
+
+.star:nth-child(15){
+    top: 0px;
+    right: 425px;
+    left:initial;
+    animation-delay:0.22s ;
+    animation-duration: 3.25s;
+}
+
+.star:nth-child(16){
+    top: 0px;
+    right: 295px;
+    left:initial;
+    animation-delay:1.55s ;
+    animation-duration: 2.65s;
+}
+
+.star:nth-child(17){
+    top: 0px;
+    right: 605px;
+    left:initial;
+    animation-delay:1.85s ;
+    animation-duration: 2.25s;
+}
 
 
 
@@ -519,5 +550,8 @@ foreach ($files as $file) {
      <span class="star"></span>
      <span class="star"></span>
      <span class="star"></span>
-
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
+     <span class="star"></span>
 </body>
