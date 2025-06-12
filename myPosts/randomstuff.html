@@ -23,3 +23,10 @@ If you fuck up your dns, and network enough, sudo stops working
 If you know what these mean, yous hould know what what I'm about to say. <br>
 
 So you should genreally try to use linux-gnu, not because it links against linux, but because it specifies the calling convention. The unknown/none-elf compiler stuff dont specify what the calling convention is, which makes it impossible to write programs that work with eachtoher.
+
+<h1> Packaging tips </h1>
+<h2> They're all objectively terrible, I've tried rpms, packaged for the mirror.csclub.uwaterloo.ca mirror, AppImages, and so many more, they're all mid </h2>
+<h2>dupload/dput</h2>
+By the way, dupload is bugged in weird ways (I literally supplied it true, and it still failed), you're better off just switching to `dput` which is much more consitently functional. Should already work
+<h2> Appimages </h2>
+STATICALLY LINK THEM, THEY BREAK SO EASILY
