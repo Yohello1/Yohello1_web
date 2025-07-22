@@ -6,7 +6,7 @@
 
     <title>Yohwllo</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/IBM-type/0.5.4/css/ibm-type.min.css">
     <link rel="stylesheet" href="components/base.css">
     <link rel="stylesheet" href="components/banner.css">
 
@@ -18,6 +18,10 @@
     a{
         color:white;
     }
+
+     h3{
+         color:white;
+     }
 
 /* Blog Code */
 
@@ -409,7 +413,7 @@
 
 </style>
 
-<body style="background-image:url('images/background.png'); font-family: Hack, monospace">
+        <body style="background-image:url('images/background.png'); font-family: IBM Plex Mono, monospace; font-weight: 500;">
     <!-- <p> Hello there </p> -->
     <div class="wrapper" >
 
@@ -445,7 +449,7 @@
             <h3>       </h3>
             <img class="profile_pfp_icon" src="images/pfp.webp">
             
-            <h3> Profile </h3>
+            <h3 style="text-align:center;"> Siracha <br>/Yohwllo </h3>
             <p style="padding-left:5px;padding-right:5px;font-size:14px">
 Welcome to my little corner of the web! I am Yohwllo, otherwise known as Siracha Sauce. I program quite a bit, sometimes play video games. Contrary to popular belif, I sleep A lot, like half my day? I like working on random stupid projects, I wanna learn more :D. <br>
 I'm also a student at the University of Waterloo, I was the prez of the cs club           </p>

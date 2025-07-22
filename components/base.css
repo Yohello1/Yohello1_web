@@ -1,5 +1,8 @@
     body {
+        height: 5000px;
         background-color: #161616;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     .wrapper {
@@ -7,6 +10,3 @@
         width: 770px;
     }
 
-        body {
-        background-color: #161616;
-    }

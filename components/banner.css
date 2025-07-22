@@ -103,19 +103,20 @@
 
 
     .left_header_one {
-        background-color: #FFFFFF;
+        background-color: #64EEEE;
         position: relative;
-        width: 95%;
-        height: 300px;
-        top: 0px;
+        width: 352px;
+        height: 292px;
+        top: 8px;
         left: 50%;
         float:left;
         transform: translate(-50%, 0);
         margin-right: 10px;
+        margin-left:  2px;
     }
 
     .left_header_two {
-        background-color: #A2A2A2;
+        background-color: #64EEEE;
         position: relative;
         width: 95%;
         height: 300px;
@@ -133,6 +134,7 @@
         top:10px;
         margin-left: 18px;
         transform: translate(0, -318px);
+        background-color: #292929;
     }
 
     .left_pfp_icon {
