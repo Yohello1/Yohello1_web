@@ -1,233 +1,101 @@
-<!DOCTYPE html>
+<?php
+
+?>
 
 <head>
 
     <meta charset="UTF-8">
 
     <title>Yohwllo</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/IBM-type/0.5.4/css/ibm-type.min.css">
-    <link rel="stylesheet" href="components/base.css">
-    <link rel="stylesheet" href="components/banner.css">
+    <style>
+      body {
+        background-color: #161616;
+        font-family: IBM Plex Mono, monospace;
+        font-weight: 500;
+     height: 10000px;
+     overflow-x:hidden;
+      }
 
-</head>
+      .wrapper {
+        margin-left:auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-top: 0;
+        width: 770px;
 
-<style>
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
+        height: auto;
+      }
 
-    a{
-        color:white;
-    }
+      /* Header */
+      .header {
+        z-index: 1;
+        width: 650px;
+        margin: auto;
+        height: 150px;        
+      }
 
-     h3{
-         color:white;
-     }
+      .banner {
+        z-index: 1;
+        width: 650px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        height: 100px;
+      
+        box-shadow: -10px -10px inset white, -10px -10px white;
+      }
 
-/* Blog Code */
+      .about_me {
+        height: 400px;
+        width: 300px;
+        background-color: #292929;
 
-    .left_header_three {
-        background-color: #FFFFFF;
-        position: relative;
-        width: 95%;
-        height: 150px;
-        top: 0px;
-        left: 50%;
-        float:left;
-        transform: translate(-50%, -280px);
-        margin-right: 10px;
-    }
+        box-shadow: 13px 13px #641A80;
+        outline-style: solid;
+        outline-color: #9305C5;
 
-   .left_header_four {
-        background-color: #A2A2A2;
-        position: relative;
-        width: 95%;
-        height: 150px;
-        top: 10px;
-        left: 50%;
-        transform: translate(-50%, -280px);
-        margin-left: 10px;
-    }
+        display: flex;
 
-    
-    .left_header_five {
-        background-color: #FFFFFF;
-        position: relative;
-        width: 95%;
-        height: 150px;
-        top: 0px;
-        left: 50%;
-        float:left;
-        transform: translate(-50%, -280px);
-        margin-right: 10px;
-    }
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+      }
 
-    .left_header_six {
-        background-color: #A2A2A2;
-        position: relative;
-        width: 95%;
-        height: 150px;
-        top: 10px;
-        left: 50%;
-        transform: translate(-50%, -280px);
-        margin-left: 10px;
-    }
-    
-    .left_blog {
+      .projects {
+          height: 400px;
+          width: 300px;
+          background-color: #292929;
+          
+          box-shadow: 13px 13px #934F14;
+          outline-style: solid;
+          outline-color: #DE6800;
+            
+          display: flex; 
+            
+          flex-direction: column;
+      }
 
-        position:relative;
-        width:350px;
-        height:140px;
-        top:10px;
-        margin-left: 20px;
-        transform: translate(0, -450px);
-    }
+      .projects_container {
+          display: flex;
+          width: 275px;
+          height: 310px;          
+          margin: auto;
 
-    .left_blog_links {
+          background-color: #393939;
+          outline-color: #DE6800;
+          outline-style: solid;
+          outline-width: 1px;
+          
+      }
 
-        position:relative;
-        width:350px;
-        height:140px;
-        top:-470px;
-        margin-left: 20px;
-        transform: translate(0, -450px);
-    }
-    
-/* Pictures css code */
-    .left_header_five {
-        background-color: #FFFFFF;
-        position: relative;
-        width: 95%;
-        height: 500px;
-        top: 0px;
-        left: 50%;
-        float:left;
-        transform: translate(-50%, -410px);
-        margin-right: 10px;
-    }
-
-    .left_header_six {
-        background-color: #A2A2A2;
-        position: relative;
-        width: 95%;
-        height: 500px;
-        top: 10px;
-        left: 50%;
-        transform: translate(-50%, -410px);
-        margin-left: 10px;
-    }
-
-    .left_pictures {
-        background-color: #880088;
-        position:relative;
-        width:350px;
-        height:490px;
-        top:10px;
-        margin-left: 18px;
-        transform: translate(0, -930px);
-    }
-
-/*Projects tab*/
-    .right_header_one
-    {
-        background-color: #FFFFFF;
-        position: relative;
-        width: 95%;
-        height: 500px;
-        top: 0px;
-        right: 50%;
-        float: right;
-        transform: translate(+50%, 0px);
-    }
-
-    .right_header_two
-    {
-        background-color: #A2A2A2;
-        position: relative;
-        width: 95%;
-        height: 500px;
-        top: 10px;
-        left: 50%;
-        transform: translate(-50%, 0px);
-        margin-left: 10px;
-    }
-
-    .right_projects {
-        background-color: #880088;
-        position:relative;
-        width:350px;
-        height:490px;
-        top:10px;
-        margin-left: 18px;
-        transform: translate(0, -519px);
-    }
-
-
-
-/* updates and changes */
-    .right_header_three
-    {
-        background-color: #FFFFFF;
-        position: relative;
-        width: 95%;
-        height: 500px;
-        top: 0px;
-        right: 50%;
-        float: right;
-        transform: translate(+50%, -485px);
-    }
-
-    .right_header_four
-    {
-        background-color: #A2A2A2;
-        position: relative;
-        width: 95%;
-        height: 500px;
-        top: 10px;
-        left: 50%;
-        transform: translate(-50%, -485px);
-        margin-left: 10px;
-    }
-
-    .right_update{
-        background-color: #880088;
-        position:relative;
-        width:350px;
-        height:490px;
-        top:10px;
-        margin-left: 18px;
-        transform: translate(0, -1003px);
-    }
-
-
-/* Profile */
-    .profile_pfp_icon {
-        width:  125px;
-        height: 125px;
-        border-radius: 50%;
-        overflow: hidden;
-        line-height: 0%;
-        float: left;
-        position: relative;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top:   5px;
-        padding-bottom: 0px;
-    }
-
-
-/* Stars */
-
-@keyframes animateBg {
-    0%,100%
-    {
-        transform:scale(1);
-    }
-    50%
-    {
-        transform:scale(1.2);
-    }
-}
-
+      /* Shooting star */
+      
 .star{
     position: absolute;
     top: 50%;
@@ -238,6 +106,7 @@
     border-radius: 50%;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
     animation:  animate 3s linear infinite;
+     z-index: -1;
 }
 .star::before{
     content: '';
@@ -272,290 +141,71 @@
 
 }
 
+    </style>
 
-.star:nth-child(1){
-    top: 100px;
-    right: 0px;
-    left:initial;
-    animation-delay:0 ;
-    animation-duration: 1s;
-}
-
-.star:nth-child(2){
-    top: 150px;
-    right: 0px;
-    left:initial;
-    animation-delay:0.2s;
-    animation-duration: 3s;
-}
-
-.star:nth-child(3){
-    top: 175px;
-    right: 0px;
-    left:initial;
-    animation-delay:0.4s ;
-    animation-duration: 2s;
-}
-
-.star:nth-child(4){
-    top: 2500px;
-    right: 0px;
-    left:initial;
-    animation-delay:0.6s;
-    animation-duration: 1.5s;
-}
-
-.star:nth-child(5){
-    top: 300px;
-    right: 0px;
-    left:initial;
-    animation-delay:0.8s;
-    animation-duration: 2.5s;
-}
-
-.star:nth-child(6){
-    top: 350px;
-    right: 0px;
-    left:initial;
-    animation-delay:1s ;
-    animation-duration: 3s;
-}
-.star:nth-child(7 ){
-    top: 475px;
-    right: 0px;
-    left:initial;
-    animation-delay:1s ;
-    animation-duration: 1.75s;
-}
-
-.star:nth-child(8){
-    top: 525px;
-    right: 0px;
-    left:initial;
-    animation-delay:1.4s ;
-    animation-duration: 1.25s;
-}
-
-.star:nth-child(9){
-    top: 0px;
-    right: 600px;
-    left:initial;
-    animation-delay:0.75s ;
-    animation-duration: 2.25s;
-}
-
-.star:nth-child(10){
-    top: 800px;
-    right: 0px;
-    left:initial;
-    animation-delay:2.75s ;
-    animation-duration: 2.25s;
-}
-
-.star:nth-child(11){
-    top: 0px;
-    right: 200px;
-    left:initial;
-    animation-delay:2.35s ;
-    animation-duration: 2.25s;
-}
-
-.star:nth-child(12){
-    top: 0px;
-    right: 500px;
-    left:initial;
-    animation-delay:2.15s ;
-    animation-duration: 2.25s;
-}
+</head> 
 
 
-.star:nth-child(13){
-    top: 0px;
-    right: 125px;
-    left:initial;
-    animation-delay:1.85s ;
-    animation-duration: 2.25s;
-}
+<body>
 
-.star:nth-child(14){
-    top: 0px;
-    right: 355px;
-    left:initial;
-    animation-delay:1.35s ;
-    animation-duration: 2.15s;
-}
-
-.star:nth-child(15){
-    top: 0px;
-    right: 425px;
-    left:initial;
-    animation-delay:0.22s ;
-    animation-duration: 3.25s;
-}
-
-.star:nth-child(16){
-    top: 0px;
-    right: 295px;
-    left:initial;
-    animation-delay:1.55s ;
-    animation-duration: 2.65s;
-}
-
-.star:nth-child(17){
-    top: 0px;
-    right: 605px;
-    left:initial;
-    animation-delay:1.85s ;
-    animation-duration: 2.25s;
-}
+  <div class="wrapper">
+    
+    <div class="header">
+      <div class="banner">
+        <h2 style="color: white; font-size: 20px; height: 25px; width: 100px; margin-top: 0px; float: left;">souro.ca</h2>
+        <h2 style=" color:white; height: 25px; width: 650px; text-align: center; position: absolute;"> Siracha </h2>
+        <h2 style="color:white; height: 85px; float: right; font-size: 10px; width: 100px;"> Also called; <br> Yohello <br> Yohwllo <br> Souro <br> Kitty <br> Sourojeet </h2>
+        <h2 style=" color: #222; height: 10px; width: 30px; font-size: 10px; padding-top 30px;transform: translateY(20px);"> secret button </h2>
+        <h2 style="color: white; display: inline-block; text-align:center; width: 450px; font-size: 12px; height: 15px;padding-top: 40;"> Projects | About Me | Contact | Blog </h2>        
+      </div> <!-- banner div -->
 
 
+    </div>
 
-</style>
+      <div class="about_me">
+        <img src="./images/pfp2.webp" style="border-radius: 10%; width: 100px; height: 100px;; padding: 10px; display: block-inline;">
+        <img src="./images/pfp3.jpg" style="border-radius: 10%; width: 100px; height: 100px; padding: 10px; display: block-inline;">
 
-        <body style="background-image:url('images/background.png'); font-family: IBM Plex Mono, monospace; font-weight: 500;">
-    <!-- <p> Hello there </p> -->
-    <div class="wrapper" >
+        <h2 style="color: #EEE;height: 10px; margin: 0px;"> About me </h2>
+        <p style="color: #EEE; padding: 5px;">
+          Hello, I'm Sourojeet Adhikari (Siracha/Souro/Kitty depending upon where you know me from). I'm a programmer & physicist at heart! I'm studying Mathematical Physics at the University of Waterloo, and do a lot of CS stuff on the side. This is my website, feel free to look around!
+          <br> <br>
+          (I hear there's a secret button somewhere here ;)
+        </p>
 
-      <div class="banner_bloc">
-        <div class="header_one"></div>
-        <div class="header_two"></div>
-        <div class="header_three">
-          <h1 class="text_title">
-            My Waste Of Space
-          </h1>
-          <h2 class="left_top_title">
-            [insert domain]
-          </h2>
-          <h2 class="left_bot_title">
-            I got bored
-          </h2>
-          <img class="pfp_icon" src="images/pfp.webp">
-
-          <h4 class="contact_info_banner"><a href="/index.html">Home</a> | yohwllo | s23adhik@csclub.uwaterloo.ca </h4>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-     <div class="left_side">
-        <div class="left_header_one"></div>
-        <div class="left_header_two"></div>
-        <div class="left_inside">
-            <h3>       </h3>
-            <img class="profile_pfp_icon" src="images/pfp.webp">
+      </div> <!--  about me div -->
+    
+    <div class="projects">
+    <h2 style="outline-style: solid; outline-color: #DE6800; outline-width: 1px; padding: 5px; margin-left: auto; margin-right: auto; height: 25px; color: #EEE; margin-top: 12px; display: flex;"> Projects </h2>
+        <div class="projects_container">
             
-            <h3 style="text-align:center;"> Siracha <br>/Yohwllo </h3>
-            <p style="padding-left:5px;padding-right:5px;font-size:14px">
-Welcome to my little corner of the web! I am Yohwllo, otherwise known as Siracha Sauce. I program quite a bit, sometimes play video games. Contrary to popular belif, I sleep A lot, like half my day? I like working on random stupid projects, I wanna learn more :D. <br>
-I'm also a student at the University of Waterloo, I was the prez of the cs club           </p>
         </div>
+    </div>
 
-
-        <div class="left_header_three"></div>
-        <div class="left_header_four"></div>
-        <div class="left_blog">
-            <h3>Blog updates</h3>
+  </div>
 
 <?php
-$directory = './myPosts/'; // Change this to your target directory
-
-$files = scandir($directory);
-foreach ($files as $file) {
-    // Skip current and parent directory entries
-    if ($file === '.' || $file === '..') continue;
-
-    // Full path
-    $path = $directory . $file;
-
-    // Only link to files (not directories)
-    if (is_file($path)) {
-        echo '<a href="' . htmlspecialchars($path) . '">' . htmlspecialchars($file) . '</a><br>';
-    }
+function getFloat($min, $max) {
+    return $min + mt_rand() / mt_getrandmax() * ($max - $min);
 }
-?>
+
+for($x = 0; $x <= rand(10, 30); $x++) {
+    echo "<span class=\"star\" style=\"top: -100px; right: ";
+    echo rand(0, 100);
+    echo "%; left: initial; animation-delay: " . getFloat(0.1, 3.0) . "s; animation-duration: " . getFloat(2.0, 4.0) . "s;\"></span> ";
+}
 
 
-        </div>
-
-        <div class="left_header_five"></div>
-        <div class="left_header_six"></div>
-        <div class="left_blog_links">
-            <h3>Links</h3>
-            <p style="padding-left:5px;padding-right:5px;">
-                I don't want the cool parts of the internet to die, and wither away, infact I want more people to know of the cool parts. So I've decided to make a links section here, where I link to cool websites I find :D
-                '</p>
-            <a href="csclub.ca"> CSClub, I was the pres of </a><br>
-            <a href="https://eater.net/boids"> Boids demo </a><br>
-            <a href="https://syed.world/"> Old friend's website </a><br>
-            <a href="https://cubityfir.st/"> This website has a cool effect </a><br>
-            <a href="http://provethatyouarenotarobot.com/"> Really fun gam(?) </a><br>
-            <a href="https://dundeezhang.com/"> My office manager's website</a><br>
-            <a href="https://smartineau.me/"> This person is better at robotics than they think</a><br>
-            <a href="https://woojiahao.com/"> I don't know how I met them, but here they are</a><br>
-            <a href="https://cs.uwaterloo.ca/~c2batty/"> A cool person I went to lunch with </a><br>
-            <a href="https://math.uwaterloo.ca/~lwmarcou/"> A cool professors website </a><br>
-            <a href="https://laifrank2002.github.io/"> Valeries webpage </a><br>
-            <a href="https://github.com/Equilibris"> Williams github </a><br>
-
-        </div>
-
-     </div>
+for($x = 0; $x <= rand(10, 30); $x++) {
+    echo "<span class=\"star\" style=\" top: ";
+    echo rand(0, 1000);
+    echo "px;left: 101%; animation-delay: " . getFloat(0.1, 3.0) . "s; animation-duration: " . getFloat(2.0, 4.0) . "s;\"></span> ";
+}
+ 
+ ?>
 
 
-
-
-        <div class="right_side">
-            <div class="right_header_one"></div>
-            <div class="right_header_two"></div>
-            <div class ="right_projects">
-                <h3>Projects</h3>
-
-                <a href="https://github.com/Yohello1/idk-what-name/tree/main/jeux-video"> Game Engine </a> <br>
-                <a href="https://github.com/Yohello1/wild-space-3"> Wild Space 3 Patched  </a> <br>
-                <a href="https://github.com/Yohello1/Yohello1_web"> Website </a> <br>
-                <a href="https://github.com/Yohello1/neso"> Operating System </a> <br>
-                <a href="publicKeys/csc.pub"> Public ssh key (csc) </a> <br>
-            </div>
-
-
-
-            <div class="right_header_three"></div>
-            <div class="right_header_four"></div>
-            <div class ="right_update">
-                <h3>Badges!</h3>
-                <br>
-                <a href="."><img src="images/badge.png" alt="My Badge!"></a>
-
-                <a href="https://hexadecimaldinosaur.com/"><img src="https://hexadecimaldinosaur.com/static/button.gif" alt="Ivys badge!"></a>
-                <a href="https://hyperneutrino.xyz/"><img src="https://hyperneutrino.xyz/badge.png" alt="Iriss badge!"></a>
-                    <a href="https://www.zerotiger.ca/
-/"><img src="https://www.zerotiger.ca/eighteightthreeone/zerotiger.gif" alt="Tiger's badge!"></a>
-                    <a href="https://dundeezhang.com/"><img src="https://dundeezhang.com/badges/dundeezhang.gif" alt="Tiger's badge!"></a>
-            </div>
-        </div>
-     </div>
-
-
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
-     <span class="star"></span>
+  
 </body>
+
+
