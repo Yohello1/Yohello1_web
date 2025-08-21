@@ -1,4 +1,29 @@
 <?php
+declare(strict_types=1);
+
+$yamlPath = __DIR__ . '/projects.yaml';
+
+if (!file_exists($yamlPath)) {
+    exit("projects.yaml not found.");
+}
+
+$projects = null;
+
+// Use PECL yaml if available
+if (function_exists('yaml_parse_file')) {
+    $projects = yaml_parse_file($yamlPath);
+} else {
+    require __DIR__ . '/vendor/autoload.php';
+    $projects = Symfony\Component\Yaml\Yaml::parseFile($yamlPath);
+}
+
+if (!is_array($projects)) {
+    $projects = [];
+}
+
+function e(?string $v): string {
+    return htmlspecialchars((string)$v, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+}
 
 ?>
 
@@ -91,8 +116,53 @@
           outline-color: #DE6800;
           outline-style: solid;
           outline-width: 1px;
+
+          overflow-y: scroll;
+          flex-direction: column;
+          justify-content: space-between;
           
       }
+
+      .Blog_and_badges {
+        width: 300px;
+        height: 400px;
+        margin-top: 35px;
+
+
+
+      }
+
+      .Pictures {
+        width: 300px;
+        height: 400px;
+        margin-top: 35px;
+
+        display: block;
+
+        background-color: #292929;
+        outline-style: solid;
+        outline-color: #16bdf9;
+        box-shadow: 13px 13px #0a7196;
+      }
+
+
+      /* Dashed List */
+      ul {
+  margin: 0;
+}
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -2px;
+      padding-top: 5;
+
+}
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -2px;
+}
+
 
       /* Shooting star */
       
@@ -156,7 +226,7 @@
         <h2 style=" color:white; height: 25px; width: 650px; text-align: center; position: absolute;"> Siracha </h2>
         <h2 style="color:white; height: 85px; float: right; font-size: 10px; width: 100px;"> Also called; <br> Yohello <br> Yohwllo <br> Souro <br> Kitty <br> Sourojeet </h2>
         <h2 style=" color: #222; height: 10px; width: 30px; font-size: 10px; padding-top 30px;transform: translateY(20px);"> secret button </h2>
-        <h2 style="color: white; display: inline-block; text-align:center; width: 450px; font-size: 12px; height: 15px;padding-top: 40;"> Projects | About Me | Contact | Blog </h2>        
+        <h2 style="color: white; display: inline-block; text-align:center; width: 450px; font-size: 12px; height: 15px;padding-top: 40;"> s23adhik@csclub.uwaterloo.ca | siri@racha.ca</h2>
       </div> <!-- banner div -->
 
 
@@ -178,9 +248,77 @@
     <div class="projects">
     <h2 style="outline-style: solid; outline-color: #DE6800; outline-width: 1px; padding: 5px; margin-left: auto; margin-right: auto; height: 25px; color: #EEE; margin-top: 12px; display: flex;"> Projects </h2>
         <div class="projects_container">
-            
+<?php if (empty($projects)): ?>
+  <p>No projects found.</p>
+<?php else: ?>
+<?php foreach ($projects as $proj): ?>
+  <div style="width:240px; height: 250px; padding: 10px; color: #DDD;">
+
+  <strong style="font-size: 16px;"><?= e($proj['Name'] ?? '') ?></strong><br>
+  <p style="margin:1px;"> <?= e($proj['Description'] ?? '') ?></p>
+  <a style="color: #40a2ed; margin:1px;" href="<?= e($proj['Link'] ?? '#') ?>">Link</a>
+  </div>
+<?php endforeach; ?>
+<?php endif; ?>
         </div>
+    </div> <!-- Projects Div -->
+
+    <div class="Blog_and_Badges">
+      <div style="height: 250px; width: 300px; outline-color: #23ea8d; box-shadow: 13px 13px #086c3e; outline-style:solid; background-color: #292929; "> <!-- This div -->
+        <h2 style="position: relative; top: 8px;color: #EEE; margin-top: 0px; margin-bottom: 0px; margin-left: auto; margin-right: auto; text-align: center; outline-width: 2px; width: 80px; outline-style: solid; outline-color: #086C3E"> Blog </h2>
+        <div style="overflow-y:scroll; margin-top: 20px;">
+          <ul class="dashed">
+            <?php
+             $dir = 'myPosts'; // Path to your directory
+             if (is_dir($dir)) {
+             $files = scandir($dir); // Get all files in directory
+             foreach ($files as $file) {
+             if ($file !== '.' && $file !== '..') { // Skip . and ..
+             $filePath = $dir . '/' . $file;
+             echo '<li><a style="color:white" href="' . $filePath . '">' . htmlspecialchars($file) . '</a></li>';
+}
+}
+} else {
+echo '<li>No posts found.</li>';
+}
+?>
+          </ul>
+        </div>
+      </div>
+
+      <div style="height: 100px; width: 300px; outline-color: #e84d22; outline-style: solid; margin-top: 40px; background-color: #292929; y-overflow:scroll;">
+        <h2 style="color:white; font-size: 16; margin-left: auto; margin-right: auto; text-align:center;"> Badges </h2>
+        <a style="color:white" href="."><img src="images/badge.png" alt="My Badge!"></a>
+
+                <a style="color:white" href="https://hexadecimaldinosaur.com/"><img src="https://hexadecimaldinosaur.com/static/button.gif" alt="Ivys badge!"></a>
+                <a style="color:white" href="https://hyperneutrino.xyz/"><img src="https://hyperneutrino.xyz/badge.png" alt="Iriss badge!"></a>
+                    <a style="color:white" href="https://www.zerotiger.ca/
+/"><img src="https://www.zerotiger.ca/eighteightthreeone/zerotiger.gif" alt="Tiger's badge!"></a>
+                    <a style="color:white" href="https://dundeezhang.com/"><img src="https://dundeezhang.com/badges/dundeezhang.gif" alt="Tiger's badge!"></a>
+      </div>
+
+
+    </div> <!-- Blog div -->
+
+    <div class="Pictures"> <!-- Not pictures lol, this is the links -->
+      <h2 style="font-size: 16px; color: #EEE;width: 200px; margin-left: auto; margin-right: auto;display:block; margin-bottom: 0px;"> Links To Cool Sites </h2>
+    <br>
+    <div style="display:block;">
+      <ul class="dashed">
+        <li><a style="color:white" href="https://csclub.ca">csclub.ca</a></li>
+        <li><a style="color:white" href="https://eater.net/boids">eater.net</a></li>
+        <li><a style="color:white" href="https://syed.world/">syde.world</a></li>
+        <li><a style="color:white" href="https://cubityfir.st/">cubityfir.st</a></li>
+        <li><a style="color:white" href="http://provethatyouarenotarobot.com/">provethatyouarenotarobot</a></li>
+        <li><a style="color:white" href="https://dundeezhang.com/">dundeezhang.com</a></li>
+        <li><a style="color:white" href="https://smartineau.me/">samrtineau.me</a></li>
+        <li><a style="color:white" href="https://cs.uwaterloo.ca/~c2batty/">Christopher Batty (UWaterloo Prof)</a></li>
+        <li><a style="color:white" href="https://math.uwaterloo.ca/~lwmarcou/">Marcoux (UWaterloo Prof)></a></li>
+        <li><a style="color:white" href="https://laifrank2002.github.io/">Lai Frank</a></li>
+        <li><a style="color:white" href="https://github.com/Equilibris">William Sørensen</a></li>
+      </ul>
     </div>
+    </div> <!-- Pictures div -->
 
   </div>
 
