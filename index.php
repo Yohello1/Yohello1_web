@@ -226,7 +226,7 @@ ul.dashed > li:before {
         <h2 style=" color:white; height: 25px; width: 650px; text-align: center; position: absolute;"> Siracha </h2>
         <h2 style="color:white; height: 85px; float: right; font-size: 10px; width: 100px;"> Also called; <br> Yohello <br> Yohwllo <br> Souro <br> Kitty <br> Sourojeet </h2>
         <h2 style=" color: #222; height: 10px; width: 30px; font-size: 10px; padding-top 30px;transform: translateY(20px);"> secret button </h2>
-        <h2 style="color: white; display: inline-block; text-align:center; width: 450px; font-size: 12px; height: 15px;padding-top: 40;"> s23adhik@csclub.uwaterloo.ca | siri@racha.ca</h2>
+        <h2 style="color: white; display: inline-block; text-align:center; width: 450px; font-size: 12px; height: 15px;padding-top: 40;"> s23adhik@uwaterloo.ca</h2>
       </div> <!-- banner div -->
 
 
