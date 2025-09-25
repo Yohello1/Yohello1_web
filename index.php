@@ -35,181 +35,200 @@ function e(?string $v): string {
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/IBM-type/0.5.4/css/ibm-type.min.css">
     <style>
-      body {
-        background-color: #161616;
-        font-family: IBM Plex Mono, monospace;
-        font-weight: 500;
-     height: 10000px;
-     overflow-x:hidden;
-      }
+     body {
+       background-color: #161616;
+       font-family: IBM Plex Mono, monospace;
+       font-weight: 500;
+       height: 10000px;
+       overflow-x:hidden;
+     }
 
-      .wrapper {
-        margin-left:auto;
-        margin-right: auto;
-        margin-bottom: 0;
-        margin-top: 0;
-        width: 770px;
+     .wrapper {
+       margin-left:auto;
+       margin-right: auto;
+       margin-bottom: 0;
+       margin-top: 0;
+       width: 770px;
 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
 
-        height: auto;
-      }
+       height: auto;
+     }
 
-      /* Header */
-      .header {
-        z-index: 1;
-        width: 650px;
-        margin: auto;
-        height: 150px;        
-      }
+     /* Header */
+     .header {
+       z-index: 1;
+       width: 650px;
+       margin: auto;
+       height: 150px;
+     }
 
-      .banner {
-        z-index: 1;
-        width: 650px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        height: 100px;
-      
-        box-shadow: -10px -10px inset white, -10px -10px white;
-      }
+     .banner {
+       z-index: 1;
+       width: 650px;
+       margin-top: 25px;
+       margin-bottom: 25px;
+       height: 100px;
 
-      .about_me {
-        height: 400px;
-        width: 300px;
-        background-color: #292929;
+       box-shadow: -10px -10px inset white, -10px -10px white;
+     }
 
-        box-shadow: 13px 13px #641A80;
-        outline-style: solid;
-        outline-color: #9305C5;
+     .about_me {
+       height: 400px;
+       width: 300px;
+       background-color: #292929;
 
-        display: flex;
+       box-shadow: 13px 13px #641A80;
+       outline-style: solid;
+       outline-color: #9305C5;
 
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        
-      }
+       display: flex;
 
-      .projects {
-          height: 400px;
-          width: 300px;
-          background-color: #292929;
-          
-          box-shadow: 13px 13px #934F14;
-          outline-style: solid;
-          outline-color: #DE6800;
-            
-          display: flex; 
-            
-          flex-direction: column;
-      }
+       justify-content: space-evenly;
+       flex-wrap: wrap;
 
-      .projects_container {
-          display: flex;
-          width: 275px;
-          height: 310px;          
-          margin: auto;
+     }
 
-          background-color: #393939;
-          outline-color: #DE6800;
-          outline-style: solid;
-          outline-width: 1px;
+     .projects {
+       height: 400px;
+       width: 300px;
+       background-color: #292929;
 
-          overflow-y: scroll;
-          flex-direction: column;
-          justify-content: space-between;
-          
-      }
+       box-shadow: 13px 13px #934F14;
+       outline-style: solid;
+       outline-color: #DE6800;
 
-      .Blog_and_badges {
-        width: 300px;
-        height: 400px;
-        margin-top: 35px;
+       display: flex;
 
+       flex-direction: column;
+     }
 
+     .projects_container {
+       display: flex;
+       width: 275px;
+       height: 310px;
+       margin: auto;
 
-      }
+       background-color: #393939;
+       outline-color: #DE6800;
+       outline-style: solid;
+       outline-width: 1px;
 
-      .Pictures {
-        width: 300px;
-        height: 400px;
-        margin-top: 35px;
+       overflow-y: scroll;
+       flex-direction: column;
+       justify-content: space-between;
 
-        display: block;
+     }
 
-        background-color: #292929;
-        outline-style: solid;
-        outline-color: #16bdf9;
-        box-shadow: 13px 13px #0a7196;
-      }
+     .Blog_and_badges {
+       width: 300px;
+       height: 400px;
+       margin-top: 35px;
 
 
-      /* Dashed List */
-      ul {
-  margin: 0;
-}
-ul.dashed {
-  list-style-type: none;
-}
-ul.dashed > li {
-  text-indent: -2px;
-      padding-top: 5;
 
-}
-ul.dashed > li:before {
-  content: "-";
-  text-indent: -2px;
-}
+     }
+
+     .Pictures {
+       width: 300px;
+       height: 400px;
+       margin-top: 35px;
+
+       display: block;
+
+       background-color: #292929;
+       outline-style: solid;
+       outline-color: #16bdf9;
+       box-shadow: 13px 13px #0a7196;
+     }
 
 
-      /* Shooting star */
-      
-.star{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 4px;
-    height: 4px;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
-    animation:  animate 3s linear infinite;
-     z-index: -1;
-}
-.star::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0px;
-    height: 1px;
-    background: linear-gradient(90deg, #fff, transparent);
-}
-@keyframes animate {
-    0%
-    {
-        transform: rotate(315deg) translateX(0);
-        opacity: 0;
-    }
-    10%
-    {
-        opacity: 1;
-    }
-    70%
-    {
-        opacity: 1;
+     /* Dashed List */
+     ul {
+       margin: 0;
+     }
+     ul.dashed {
+       list-style-type: none;
+     }
+     ul.dashed > li {
+       text-indent: -2px;
+       padding-top: 5;
 
-    }
-    100%
-    {
-        transform: rotate(315deg) translateX(-1500px);
-        opacity: 1;
+     }
+     ul.dashed > li:before {
+       content: "-";
+       text-indent: -2px;
+     }
 
-    }
 
-}
+     /* Shooting star */
+
+     .star{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       width: 4px;
+       height: 4px;
+       background: #fff;
+       border-radius: 50%;
+       box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
+       animation:  animate 3s linear infinite;
+       z-index: -1;
+     }
+     .star::before{
+       content: '';
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       width: 0px;
+       height: 1px;
+       background: linear-gradient(90deg, #fff, transparent);
+     }
+     @keyframes animate {
+       0%
+       {
+         transform: rotate(315deg) translateX(0);
+         opacity: 0;
+       }
+       10%
+       {
+         opacity: 1;
+       }
+       70%
+       {
+         opacity: 1;
+
+       }
+       100%
+       {
+         transform: rotate(315deg) translateX(-1500px);
+         opacity: 1;
+
+       }
+
+     }
+
+     .bg-star {
+       position: absolute;
+       border-radius: 50%;
+       z-index: -1;
+       animation: twinkle 3s infinite ease-in-out;
+     }
+
+     @keyframes twinkle {
+       0%, 100% {
+         opacity: 0.6;
+         transform: scale(1);
+       }
+       50% {
+         opacity: 1;
+         transform: scale(1.1);
+       }
+     }
+
 
     </style>
 
@@ -222,11 +241,11 @@ ul.dashed > li:before {
     
     <div class="header">
       <div class="banner">
-        <h2 style="color: white; font-size: 20px; height: 25px; width: 100px; margin-top: 0px; float: left;">souro.ca</h2>
+        <h2 style="color: white; font-size: 20px; height: 25px; width: 100px; margin-top: 0px; float: left;">racha.ca</h2>
         <h2 style=" color:white; height: 25px; width: 650px; text-align: center; position: absolute;"> Siracha </h2>
         <h2 style="color:white; height: 85px; float: right; font-size: 10px; width: 100px;"> Also called; <br> Yohello <br> Yohwllo <br> Souro <br> Kitty <br> Sourojeet </h2>
         <h2 style=" color: #222; height: 10px; width: 30px; font-size: 10px; padding-top 30px;transform: translateY(20px);"> secret button </h2>
-        <h2 style="color: white; display: inline-block; text-align:center; width: 450px; font-size: 12px; height: 15px;padding-top: 40;"> s23adhik@uwaterloo.ca</h2>
+        <h2 style="color: white; display: inline-block; text-align:center; width: 450px; font-size: 12px; height: 15px;padding-top: 40;"> siri@racha.ca </h2>
       </div> <!-- banner div -->
 
 
@@ -322,25 +341,77 @@ echo '<li>No posts found.</li>';
 
   </div>
 
-<?php
-function getFloat($min, $max) {
+  <?php
+  function getFloat($min, $max) {
     return $min + mt_rand() / mt_getrandmax() * ($max - $min);
-}
+  }
 
-for($x = 0; $x <= rand(10, 30); $x++) {
+  for($x = 0; $x <= rand(10, 30); $x++) {
     echo "<span class=\"star\" style=\"top: -100px; right: ";
     echo rand(0, 100);
     echo "%; left: initial; animation-delay: " . getFloat(0.1, 3.0) . "s; animation-duration: " . getFloat(2.0, 4.0) . "s;\"></span> ";
-}
+  }
 
 
-for($x = 0; $x <= rand(10, 30); $x++) {
+  for($x = 0; $x <= rand(10, 30); $x++) {
     echo "<span class=\"star\" style=\" top: ";
     echo rand(0, 1000);
     echo "px;left: 101%; animation-delay: " . getFloat(0.1, 3.0) . "s; animation-duration: " . getFloat(2.0, 4.0) . "s;\"></span> ";
-}
- 
- ?>
+  }
+
+
+  $starColors = [
+    '#FFFFFF', '#F8F8FF', '#FFFACD', '#FFE4B5', '#E0FFFF', '#FFDAB9', '#FFFAF0', '#FFEFD5', // original
+    '#ADD8E6', '#87CEFA', '#F0E68C', '#FFC0CB', '#FFD700', '#DA70D6', '#00FFFF', '#B0E0E6', // pastel
+
+    // Vibrant / neon / fantasy cosmic additions
+    '#FF69B4', // hot pink
+    '#FF1493', // deep pink
+    '#FF4500', // orange-red
+    '#00CED1', // dark turquoise
+    '#7CFC00', // lawn green
+    '#00FF7F', // spring green
+    '#1E90FF', // dodger blue
+    '#9400D3', // dark violet
+    '#8A2BE2', // blue violet
+    '#BA55D3', // medium orchid
+    '#DC143C', // crimson
+    '#FF8C00', // dark orange
+    '#00BFFF', // deep sky blue
+    '#FF00FF', // fuchsia
+    '#39FF14', // neon green
+    '#FFB6C1', // light pink
+    '#E6E6FA', // lavender
+    '#DDA0DD', // plum
+  ];
+
+
+  for ($i = 0; $i < rand(500, 600); $i++) {
+    $size = getFloat(0.5, 5.0);
+    $top = rand(0, 2000);
+    $left = rand(0, 100);
+    $opacity = getFloat(0.3, 1.0);
+    $color = $starColors[array_rand($starColors)];
+
+    $glow = $size * 2;
+    $glowOpacity = $opacity * 0.8;
+
+    $delay = getFloat(0, 5); // random delay between 0s and 5s
+
+    echo "<span class=\"bg-star\" style=\"
+        width: {$size}px;
+        height: {$size}px;
+        top: {$top}px;
+        left: {$left}%;
+        background-color: {$color};
+        opacity: {$opacity};
+        box-shadow: 0 0 {$glow}px {$color};
+        animation-delay: {$delay}s;
+    \"></span>\n";
+  }
+
+
+  ?>
 
 
   
