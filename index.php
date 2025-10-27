@@ -27,6 +27,8 @@ function e(?string $v): string {
 
 ?>
 
+
+<!DOCTYPE HTML>
 <head>
 
     <meta charset="UTF-8">
@@ -121,6 +123,7 @@ function e(?string $v): string {
          outline-width: 1px;
 
          overflow-y: scroll;
+         overflow-x: hidden;
          flex-direction: column;
          justify-content: space-between;
 
@@ -272,7 +275,7 @@ function e(?string $v): string {
             <img src="./images/pfp3.jpg" style="border-radius: 10%; width: 100px; height: 100px; padding: 10px; display: block-inline;">
 
             <h2 style="color: #EEE;height: 10px; margin: 0px;"> About me </h2>
-            <p style="color: #EEE; padding: 5px;">
+            <p style="color: #EEE; padding: 5px; font-size:10.5pt;">
                 Hello, I'm Sourojeet Adhikari (Siracha/Souro/Kitty depending upon where you know me from). I'm a programmer & physicist at heart! I'm studying Mathematical Physics at the University of Waterloo, and do a lot of CS stuff on the side. This is my website, feel free to look around!
                 <br> <br>
                 (I hear there's a secret button somewhere here ;)
@@ -298,10 +301,10 @@ function e(?string $v): string {
             </div>
         </div> <!-- Projects Div -->
 
-        <div class="Blog_and_Badges">
+        <div class="Blog_and_badges">
             <div style="height: 250px; width: 300px; outline-color: #23ea8d; box-shadow: 13px 13px #086c3e; outline-style:solid; background-color: #292929; "> <!-- This div -->
                 <h2 style="position: relative; top: 8px;color: #EEE; margin-top: 0px; margin-bottom: 0px; margin-left: auto; margin-right: auto; text-align: center; outline-width: 2px; width: 80px; outline-style: solid; outline-color: #086C3E"> Blog </h2>
-                <div style="overflow-y:scroll; margin-top: 20px;">
+                <div style="overflow-y:scroll; overflow-x:hidden; margin-top: 20px;">
                     <ul class="dashed">
                         <?php
                         $dir = 'myPosts'; // Path to your directory
