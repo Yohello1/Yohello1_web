@@ -264,7 +264,7 @@ function e(?string $v): string {
                 <h2 style=" color:white; height: 25px; width: 650px; text-align: center; position: absolute;"> Siracha </h2>
                 <h2 style="color:white; height: 100px; float: right; margin-top:2px;font-size: 10px; width: 100px;"> Also called; <br> Yohello <br> Yohwllo <br> Souro <br> Siri <br> Siracha <br> Sourojeet </h2>
                 <h2 style=" color: #222; height: 10px; width: 30px; font-size: 10px; padding-top 30px;transform: translateY(20px);"> secret button </h2>
-                <h2 style="color: white; display: inline-block; text-align:center; width: 450px; font-size: 12px; height: 15px;padding-top: 40;"> siri@racha.ca </h2>
+                <h2 style="color: white; display: inline-block; text-align:center; width: 450px; font-size: 12px; height: 15px;padding-top: 40px;"> siri@racha.ca </h2>
             </div> <!-- banner div -->
 
 
@@ -324,8 +324,8 @@ function e(?string $v): string {
                 </div>
             </div>
 
-            <div style="height: 100px; width: 300px; outline-color: #e84d22; outline-style: solid; margin-top: 40px; background-color: #292929; y-overflow:scroll; box-shadow: 13px 13px #9e2a0b;">
-                <h2 style="color:white; font-size: 16; margin-left: auto; margin-right: auto; text-align:center;"> Badges </h2>
+            <div style="height: 100px; width: 300px; outline-color: #e84d22; outline-style: solid; margin-top: 40px; background-color: #292929; overflow-y:scroll; box-shadow: 13px 13px #9e2a0b;">
+                <h2 style="color:white; font-size: 16px; margin-left: auto; margin-right: auto; text-align:center;"> Badges </h2>
                 <a style="color:white" href="."><img src="images/badge.png" alt="My Badge!"></a>
 
                 <a style="color:white" href="https://hexadecimaldinosaur.com/"><img src="https://hexadecimaldinosaur.com/static/button.gif" alt="Ivys badge!"></a>
