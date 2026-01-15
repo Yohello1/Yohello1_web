@@ -2,4 +2,8 @@
 <br>
 For some reason, as of a recent Fedora update (or tailscale?), kvm can no longer access the internet when tailscale is active. Have to take it down for kvm-vms to be able to access.
 
+Also recently(?) fedora went from using nftables to iptables (or was it the other way around?). Which broke a lot of my vms since libvirtd used I think iptables originally? Had to reconfig, restart, and then turn off taislcale.
+<br>
+Ngl very annoying
+
 Ya. good luck yall!

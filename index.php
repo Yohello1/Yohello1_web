@@ -304,29 +304,29 @@ function e(?string $v): string {
         <div class="Blog_and_badges">
             <div style="height: 250px; width: 300px; outline-color: #23ea8d; box-shadow: 13px 13px #086c3e; outline-style:solid; background-color: #292929; "> <!-- This div -->
                 <h2 style="position: relative; top: 8px;color: #EEE; margin-top: 0px; margin-bottom: 0px; margin-left: auto; margin-right: auto; text-align: center; outline-width: 2px; width: 80px; outline-style: solid; outline-color: #086C3E"> Blog </h2>
-                <div style="overflow-y:scroll; overflow-x:hidden; margin-top: 20px;">
+                <div style="overflow-y:scroll; overflow-x:hidden; margin-top: 20px; height:200px;">
                     <ul class="dashed">
-                    <?php
-$dir = 'myPosts';
+                        <?php
+                        $dir = 'myPosts';
 
-if (is_dir($dir)) {
-    $files = array_diff(scandir($dir), array('.', '..'));
+                        if (is_dir($dir)) {
+                            $files = array_diff(scandir($dir), array('.', '..'));
 
-    $fileData = [];
-    foreach ($files as $file) {
-        $fileData[$file] = filemtime($dir . '/' . $file);
-    }
+                            $fileData = [];
+                            foreach ($files as $file) {
+                                $fileData[$file] = filemtime($dir . '/' . $file);
+                            }
 
-    arsort($fileData);
+                            arsort($fileData);
 
-    foreach ($fileData as $file => $mtime) {
-        $filePath = $dir . '/' . $file;
-        echo '<li><a style="color:white" href="' . $filePath . '">' . htmlspecialchars($file) . '</a></li>';
-    }
-} else {
-    echo '<li>No posts found.</li>';
-}
-?>
+                            foreach ($fileData as $file => $mtime) {
+                                $filePath = $dir . '/' . $file;
+                                echo '<li><a style="color:white" href="' . $filePath . '">' . htmlspecialchars($file) . '</a></li>';
+                            }
+                        } else {
+                            echo '<li>No posts found.</li>';
+                        }
+                        ?>
 
                     </ul>
                 </div>
@@ -338,8 +338,8 @@ if (is_dir($dir)) {
 
                 <a style="color:white" href="https://hexadecimaldinosaur.com/"><img src="https://hexadecimaldinosaur.com/static/button.gif" alt="Ivys badge!"></a>
                 <a style="color:white" href="https://hyperneutrino.xyz/"><img src="https://hyperneutrino.xyz/badge.png" alt="Iriss badge!"></a>
-                <a style="color:white" href="https://www.zerotiger.ca/
-                          /"><img src="https://www.zerotiger.ca/eighteightthreeone/zerotiger.gif" alt="Tiger's badge!"></a>
+                <!-- <a style="color:white" href="https://www.zerotiger.com/
+                          /"><img src="https://www.zerotiger.com/eighteightthreeone/zerotiger.gif" alt="Tiger's badge!"></a> -->
                 <a style="color:white" href="https://dundeezhang.com/"><img src="https://dundeezhang.com/badges/dundeezhang.gif" alt="Tiger's badge!"></a>
             </div>
 
