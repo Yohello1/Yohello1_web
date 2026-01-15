@@ -306,20 +306,28 @@ function e(?string $v): string {
                 <h2 style="position: relative; top: 8px;color: #EEE; margin-top: 0px; margin-bottom: 0px; margin-left: auto; margin-right: auto; text-align: center; outline-width: 2px; width: 80px; outline-style: solid; outline-color: #086C3E"> Blog </h2>
                 <div style="overflow-y:scroll; overflow-x:hidden; margin-top: 20px;">
                     <ul class="dashed">
-                        <?php
-                        $dir = 'myPosts'; // Path to your directory
-                        if (is_dir($dir)) {
-                            $files = scandir($dir); // Get all files in directory
-                            foreach ($files as $file) {
-                                if ($file !== '.' && $file !== '..') { // Skip . and ..
-                                    $filePath = $dir . '/' . $file;
-                                    echo '<li><a style="color:white" href="' . $filePath . '">' . htmlspecialchars($file) . '</a></li>';
-                                }
-                            }
-                        } else {
-                            echo '<li>No posts found.</li>';
-                        }
-                        ?>
+                    <?php
+$dir = 'myPosts';
+
+if (is_dir($dir)) {
+    $files = array_diff(scandir($dir), array('.', '..'));
+
+    $fileData = [];
+    foreach ($files as $file) {
+        $fileData[$file] = filemtime($dir . '/' . $file);
+    }
+
+    arsort($fileData);
+
+    foreach ($fileData as $file => $mtime) {
+        $filePath = $dir . '/' . $file;
+        echo '<li><a style="color:white" href="' . $filePath . '">' . htmlspecialchars($file) . '</a></li>';
+    }
+} else {
+    echo '<li>No posts found.</li>';
+}
+?>
+
                     </ul>
                 </div>
             </div>
