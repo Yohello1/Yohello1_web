@@ -336,7 +336,7 @@ function e(?string $v): string {
                 <h2 style="color:white; font-size: 16px; margin-left: auto; margin-right: auto; text-align:center;"> Badges </h2>
                 <a style="color:white" href="."><img src="images/badge.png" alt="My Badge!"></a>
 
-                <a style="color:white" href="https://hexadecimaldinosaur.com/"><img src="https://hexadecimaldinosaur.com/static/button.gif" alt="Ivys badge!"></a>
+                <!-- This person seems to dislike me, and removed me from their site, so I guess I'll be removing them sadly... <a style="color:white" href="https://hexadecimaldinosaur.com/"><img src="https://hexadecimaldinosaur.com/static/button.gif" alt="Ivys badge!"></a> -->
                 <a style="color:white" href="https://hyperneutrino.xyz/"><img src="https://hyperneutrino.xyz/badge.png" alt="Iriss badge!"></a>
                 <!-- <a style="color:white" href="https://www.zerotiger.com/
                           /"><img src="https://www.zerotiger.com/eighteightthreeone/zerotiger.gif" alt="Tiger's badge!"></a> -->
